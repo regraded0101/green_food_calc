@@ -1,0 +1,11 @@
+https://www.ecta.com/resources/Documents/Best%20Practices%20Guidelines/guideline_for_measuring_and_managing_co2.pdf 
+https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_chapter8.pdf -> p610
+https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020 -> DEFRA's emmissions calculator (USE)
+
+Chosen emmissions calculator:
+
+DEFRA (gov.uk) factors. This is because it is a standardised measurement, endorsed by the UK government, for the emmissions calculations. 
+The calculations will be carried out to provide a range of likely emmissions values, and will be measured in units of CO2 per units
+of product. Exact calculations of CO2 values are unknown because there is not publically avaliable data on which ships contain which
+food products. Any estimate at the likely CO2 values will be estimates and risk significantly under or over counting by under or over 
+counting the number of ships containing food products.
