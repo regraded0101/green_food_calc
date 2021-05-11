@@ -6,6 +6,7 @@ library(rgeos)
 library(tidyr)
 library(plotly)
 library(geosphere)
+library(tibble)
 # create port location master ----
 # DO NOT RUN - Linked to Google's API and can charge to run a lot
 #location_data <- 
@@ -131,8 +132,8 @@ airports_data <-
 
 
 
-
-world_shp <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map")
+# shapefile created in QGIS with panama canal and suez canal removed
+world_shp <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_suez_pan")
 world_df <- broom::tidy(world_shp)
 
 ggplot() +
@@ -155,3 +156,4 @@ ggplot() +
   geom_polygon(data = uk_df, aes(x = long, y = lat, group = group), fill = 'white', alpha = 0.4) +
   geom_point(data = uk_ports, aes(x = lon, y = lat), col = 'red')
 
+ggplotly()
