@@ -1,5 +1,6 @@
 # set up google API key - Step written in console to avoid writing in script (for privacy)
 library(ggmap)
+library(gmapsdistance)
 library(rgdal)
 library(broom)
 library(rgeos)
@@ -7,64 +8,75 @@ library(tidyr)
 library(plotly)
 library(geosphere)
 library(tibble)
+library(tictoc)
+library(rgdal)
+library(raster)
+library(gdistance)
+library(readr)
 # create port location master ----
 # DO NOT RUN - Linked to Google's API and can charge to run a lot
-#location_data <- 
-#  trade_data %>%
-#  distinct(country) %>%
-#  bind_rows(port_type %>%
-#              distinct(port) %>% 
-#              mutate(port = paste0(port, ', United Kingdom')) %>%
-#              rename(country = port)) %>%
-#  mutate_geocode(country)
-
-#write_csv(location_data, 'data/geo_data/country_and_port_locations.csv')
+#register_google("AIzaSyBm1THuOq7VrkkYw8UEfwPuOLNXHYEcpUM")
+# 
+# location_data <- 
+#    trade_data %>%
+#    distinct(country, eu_non_eu) %>%
+#    bind_rows(port_type %>%
+#                distinct(port) %>% 
+#                mutate(port = paste0(port, ', United Kingdom')) %>%
+#                rename(country = port)) %>%
+#    mutate_geocode(country)
+# 
+# 
+# location_data <- 
+#   location_data %>%
+#   rows_update(tibble(country = c("Thamesport, United Kingdom",
+#                                  "Occ Palest Terr",
+#                                  "Furnace, United Kingdom",
+#                                  "Bowling, United Kingdom",
+#                                  "All Other Airports, United Kingdom",
+#                                  "Pembroke Epu, United Kingdom",
+#                                  "Southend (Corporation Jetty), United Kingdom",
+#                                  "Peel, United Kingdom",
+#                                  "Georgia",
+#                                  "Turks & Caicos",
+#                                  "Jordan",
+#                                  "Br Virgin Is"),
+#                      lat = c(51.431285,
+#                              31.9474,
+#                              51.509865,
+#                              53.7812,
+#                              51.509865,
+#                              51.6746,
+#                              51.530133,
+#                              54.2225,
+#                              42.3154,
+#                              21.6940,
+#                              30.5852,
+#                              18.4335),
+#                      lon = c(0.68690500,
+#                              35.2272,
+#                              -0.118092,
+#                              1.7373,
+#                              -0.118092,
+#                              -4.9129,
+#                              0.730685,
+#                              -4.6985,
+#                              43.3569,
+#                              71.7979,
+#                              36.2384,
+#                              64.6333)),
+#               
+#               by = "country")
+# 
+# 
+# write_csv(location_data, 'data/geo_data/country_and_port_locations.csv')
 
 # alter location data where Google's Api could not find them or they are 
 # obviously incorrect e.g.in USA for UK ports. For unknown uk ports, the lat/long have
 # been replaced with London's. These ports include: Furnace; All Other Airports
 location_data <- read_csv('data/geo_data/country_and_port_locations.csv')
 
-location_data <- 
-  location_data %>%
-  rows_update(tibble(country = c("Thamesport, United Kingdom",
-                                 "Occ Palest Terr",
-                                 "Furnace, United Kingdom",
-                                 "Bowling, United Kingdom",
-                                 "All Other Airports, United Kingdom",
-                                 "Pembroke Epu, United Kingdom",
-                                 "Southend (Corporation Jetty), United Kingdom",
-                                 "Peel, United Kingdom",
-                                 "Georgia",
-                                 "Turks & Caicos",
-                                 "Jordan",
-                                 "Br Virgin Is"),
-                     lat = c(51.431285,
-                             31.9474,
-                             51.509865,
-                             53.7812,
-                             51.509865,
-                             51.6746,
-                             51.530133,
-                             54.2225,
-                             42.3154,
-                             21.6940,
-                             30.5852,
-                             18.4335),
-                     lon = c(0.68690500,
-                             35.2272,
-                             -0.118092,
-                             1.7373,
-                             -0.118092,
-                             -4.9129,
-                             0.730685,
-                             -4.6985,
-                             43.3569,
-                             71.7979,
-                             36.2384,
-                             64.6333)),
-              
-                     by = "country")
+# Air Distances----
 
 port_type_join <- 
   port_type %>%
@@ -82,11 +94,9 @@ location_data <-
 
 
 
-
-
-# create airports data ----
+# create airports data
 airports_data <-
-  tibble(x = location_data %>% filter(uk_port & port_type == 'Air') %>% pull(country)) %>%  # create row names with UK Airports
+  tibble(x = "UK") %>%  # create row with "UK"
   add_column(!!!set_names(location_data %>% filter(!uk_port) %>% pull(country) %>% as.list())) %>% # create column names with all non-UK ports
   mutate(across(!matches("^x$"), function(x){return(NA)})) %>% # turn every column, except the first, into NA
   pivot_longer(cols = matches("[^^x$]")) %>% # turn from wide to long df
@@ -94,11 +104,13 @@ airports_data <-
   rename(uk_port = x,
          intl_port = name)
 
+
+
 # bring in all ports lat/long data
 airports_data  <- 
   airports_data %>%
-  left_join(location_data %>% filter(uk_port) %>% select(-c(uk_port, port_type)), 
-            by = c("uk_port" = "country")) %>%
+  mutate(lon = -1.309042,
+         lat =  52.421042)%>%
   rename(lon_x = lon,
          lat_x = lat) %>%
   left_join(location_data %>% filter(!uk_port) %>% select(-c(uk_port, port_type)), 
@@ -106,54 +118,193 @@ airports_data  <-
   rename(lon_y = lon,
          lat_y = lat)
 
+
+
 # calculate Haversine Great Circle Distance
 airports_data <- 
   airports_data  %>%
   rowwise() %>%
   mutate(dist = distHaversine(cbind(lon_x, lat_x), cbind(lon_y, lat_y)))
 
+#write_rds( airports_data, "data/geo_data/tidy_data/air_distance.rds")
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Sea Distances----
 
 # shapefile created in QGIS with panama canal and suez canal removed
-world_shp <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_suez_pan")
+world_shp <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_suez_pan_v7")
 world_df <- broom::tidy(world_shp)
 
-ggplot() +
-  geom_polygon(data = world_df, aes(x = long, y = lat, group = group), fill = 'lightgrey', col = 'black') +
-  geom_point(data = location_data, aes(x = lon, y = lat, text = country))
 
-ggplotly(tooltip = 'text')
+#Create an empty raster
+new = raster(ncol=360*3, nrow= 180*3)
+projection(new) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 
 
-uk_ports <- 
+r <- rasterize(world_shp, new)
+
+
+#Replace value with 1, 99999 to the point where ship can go and cannot
+values(r)[is.na(values(r))] <- 1
+values(r)[values(r)>1] <- 999999
+plot(r)
+
+#Prepare transition object
+p <- transition(r, function(x){1/mean(x)}, 8)
+p <- geoCorrection(p)
+
+
+
+#Self defined distance calculator, iput two pairs of longitude and latitude to get the shortest distance
+DistanceCalculator <- function(port1, port2){
+  path <- shortestPath(x = p, origin = port1, goal = port2, output = "SpatialLines")
+  #plot(r)
+  #lines(path)
+  return(path)
+  #return(SpatialLinesLengths(path ,longlat=TRUE)*0.539957)
+}
+
+non_uk_eu_ports <-
+  location_data %>% 
+  filter((!uk_port) & (eu_non_eu != "EU")) %>% 
+  select(lon, lat) %>%
+  as.matrix()
+
+
+tic()
+ports_ls <- vector("list", nrow(non_uk_eu_ports)) # speed up for loop by setting list length before loop
+#port_df <- data.frame(port_uk = character(), port_intl = character(), distance = numeric(), stringsAsFactors = FALSE)
+port_df <- as.data.frame(matrix(ncol = 3, nrow = nrow(non_uk_eu_ports)))
+colnames(port_df) <- c("port_uk", "port_intl", "distance")
+
+
+for (j in 1:nrow(non_uk_eu_ports)) {
+  ports_ls[[j]]  <- DistanceCalculator(non_uk_eu_ports[j,], c(-1.309042, 52.421042)) # set fixed UK lat/long
+  port_df[[j, "port_uk"]] <- "UK"
+  port_df[[j, "port_intl"]] <- location_data[(!location_data$uk_port) & (location_data$eu_non_eu != "EU"),]$country[j]
+  port_df[[j, "distance"]] <- SpatialLinesLengths(ports_ls[[j]], longlat = TRUE)
+}
+toc('Run Time: ')
+
+#write_rds(port_df,"data/geo_data/tidy_data/sea_distance.rds")
+
+
+# Air Paths----
+
+airports_path_ls <- vector("list", nrow(airports_data))
+# create points for flight paths
+for (i in 1:nrow(airports_data)) {
+  
+  UK_coord <- airports_data[i, c("lon_x", "lat_x")]
+  intl_coord <- airports_data[i, c("lon_y", "lat_y")]
+  airports_path_ls[[i]] <- mutate(as.data.frame(gcIntermediate(UK_coord, intl_coord)), group = as.character(airports_data[i, 'intl_port']))
+  
+}
+
+airports_path_df <- do.call(rbind, airports_path_ls)
+
+# Sea Paths----
+# create blank dataframe
+port_lines <- data.frame(x = numeric(), y = numeric())
+
+get_port_lines <- function(i) {
+  
+  out <- as.data.frame(coordinates(ports_ls[[i]])) # get coordinates of the SpatialLines
+  out$group <- as.character(port_df[i, 'port_intl'])
+  colnames(out) <- c("lon", "lat", "group")
+  
+  return(out)
+}
+
+# iterate over all SpatialLines
+port_lines_ls <- list()
+for (l in 1:length(ports_ls)) {
+  
+  port_lines_ls[[l]] <- get_port_lines(l)
+  
+  
+}
+# Combine into dataframe
+port_lines_df <- do.call(rbind, port_lines_ls)
+
+
+#Together Paths----
+sea_air_paths <- 
+  rbind(mutate(airports_path_df, type = "Air"),
+        mutate(port_lines_df, type = "Sea"))
+# Create conversion table from group number to country name
+#paths_group_conver_tbl <- as.data.frame(cbind(airports_data[['intl_port']], seq(1,170)))
+#colnames(paths_group_conver_tbl) <- c("country", "group")
+#write_rds(paths_group_conver_tbl, "data/geo_data/tidy_data/paths_group_convert_tbl.rds")
+#sea_air_paths <- 
+#  sea_air_paths %>%
+#  left_join(paths_group_conver_tbl, by = "group")
+
+#Road Paths----
+# Get paths and distances from Google's API
+# Create paths from country to Calais, France -> lorries will probably go to somewhere close to this
+# and catch a ferry to UK. Will also include a short ferry hop
+eu_ports <- 
   location_data %>%
-  slice(144:nrow(location_data))
+  filter((!uk_port) & (eu_non_eu == "EU") & (country != "Cyprus")) %>% # remove Cyprus as the route does not exist
 
-uk_shp <- rgdal::readOGR(dsn = "data/shape_files", layer = "uk_countries")
-uk_df <- broom::tidy(uk_shp)
-uk_df$long <- uk_df$long/1e5
-uk_df$lat <- uk_df$lat/1e4
+  select(country) 
+
+road_path_ls <- vector("list", nrow(eu_ports))
+road_distances <- data.frame(distance = numeric(), country = character(), stringsAsFactors=FALSE)
+for (k in 1:nrow(eu_ports)) {
+  
+  # create path from EU country to Calais, France
+  route <- 
+    ggmap::route(from = as.character(eu_ports[[k,1]]), 
+                 to = "Calais, France", 
+                 mode = "driving", 
+                 structure = "route")
+  
+  # add name of port
+  route <- mutate(route, country = eu_ports[[k,1]])
+  
+  # calculate the distance of the route
+  road_dist <- sum(route$km, na.rm = TRUE)
+  # add to dataframe
+  road_distances[[k, 'distance']] <- road_dist
+  road_distances[[k, 'country']] <- eu_ports[[k,1]]
+      
+  # add to path road list
+  road_path_ls[[k]] <- route
+
+}
+
+
+road_path_df <- do.call(rbind, road_path_ls)
+# alter and add columns to map to sea_air_paths
+road_path_df <-
+  road_path_df %>% 
+  ungroup() %>%
+  mutate(type = "Road") %>%
+  rename(group= country) %>%
+  select(lon, lat, group, type) 
+
+# Together ----
+sea_air_road_paths <- sea_air_paths %>%
+  rbind(road_path_df)
+
+#Plot----
+# 'pretty' looking shapefile (no QGIS polygons)
+world_shp_plot <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_clean")
+world_df_plot <- broom::tidy(world_shp_plot)
+
 
 ggplot() +
-  geom_polygon(data = uk_df, aes(x = long, y = lat, group = group), fill = 'white', alpha = 0.4) +
-  geom_point(data = uk_ports, aes(x = lon, y = lat), col = 'red')
+  geom_polygon(world_df_plot, mapping = aes(x = long, y = lat, group = group), fill = 'lightgrey') +
+  geom_path(sea_air_road_paths %>% filter(group == "Australia"), mapping = aes(x = lon, y = lat, group = group))
+ggplotly()  
 
-ggplotly()
+write_rds(sea_air_paths, "data/geo_data/tidy_data/sea_air_paths.rds")
+write_rds(sea_air_road_paths, "data/geo_data/tidy_data/sea_air_road_paths.rds")
+
+
+

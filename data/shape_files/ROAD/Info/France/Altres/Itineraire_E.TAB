@@ -1,0 +1,73 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 66
+    NumeroLigne Integer ;
+    Statut Char (10) ;
+    ACTUALITE Integer ;
+    DEPARTEMENT Integer ;
+    ROUTE Char (6) ;
+    CCONCESSION Char (1) ;
+    PR_DEBUT Integer ;
+    ABSCISSE_DEBUT Integer ;
+    PR_FIN Integer ;
+    ABSCISSE_FIN Integer ;
+    ABSCUMDEB Integer ;
+    ABSCUMFIN Integer ;
+    CLASSEADMIN Char (1) ;
+    TYPEROUTE Char (1) ;
+    LIBTYPEROUTE Char (44) ;
+    REGION Integer ;
+    LIBREGION Char (26) ;
+    GESTIONNAIRE Char (9) ;
+    LIBGESTIONNAIRE Char (55) ;
+    COL_19 Char (1) ;
+    LONGUEUR Integer ;
+    ISECT Char (30) ;
+    NSECT Integer ;
+    NOPRC Integer ;
+    ABSC Integer ;
+    LIBC Char (20) ;
+    LIBDEB Char (20) ;
+    LIBFIN Char (20) ;
+    LONG_RC Integer ;
+    MJAN Integer ;
+    POURCPLN Integer ;
+    ANNEE_1 Integer ;
+    MJAN_1 Integer ;
+    POURCPLN_1 Integer ;
+    ANNEE_2 Integer ;
+    MJAN_2 Integer ;
+    POURCPLN_2 Integer ;
+    ANNEE_3 Integer ;
+    MJAN_3 Integer ;
+    POURCPLN_3 Integer ;
+    ANNEE_4 Integer ;
+    MJAN_4 Integer ;
+    POURCPLN_4 Integer ;
+    ANNEE_5 Integer ;
+    MJAN_5 Integer ;
+    POURCPLN_5 Integer ;
+    ITIEUR1 Char (4) Index 1 ;
+    ITIEUR2 Char (4) Index 2 ;
+    ITIEUR3 Char (4) Index 3 ;
+    TCPT Char (1) ;
+    CLASRT Char (1) ;
+    CLPROFTRAF Integer ;
+    TRESO Integer ;
+    MJM01 Integer ;
+    MJM02 Integer ;
+    MJM03 Integer ;
+    MJM04 Integer ;
+    MJM05 Integer ;
+    MJM06 Integer ;
+    MJM07 Integer ;
+    MJM08 Integer ;
+    MJM09 Integer ;
+    MJM10 Integer ;
+    MJM11 Integer ;
+    MJM12 Integer ;
+    L_CHAUSSEE Char (1) ;

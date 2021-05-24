@@ -1,0 +1,12 @@
+!table
+!version 550
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 5
+    IDGEOFLA Decimal (7, 0) ;
+    NOMCOMMUNE Char (50) ;
+    STATUT Char (25) ;
+    IDDEPT Char (3) ;
+    IDARCIMS Float ;

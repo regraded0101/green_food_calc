@@ -1,0 +1,414 @@
+!Workspace
+!Version 780
+!Charset WindowsLatin1
+Open Table "stations_sites_IE" As stations_sites_IE Interactive
+Open Table "C:\Documents and Settings\therond\Mes documents\BOULOT\fond de cartes et logos Olivier\Donnees_route120 v2\logos\marianne_blocmarque_ajour.TAB" As marianne_blocmarque_ajour Interactive
+Open Table "C:\Documents and Settings\therond\Mes documents\BOULOT\fond de cartes et logos Olivier\Donnees_route120 v2\logos\setra.TAB" As setra Interactive
+Open Table "C:\Documents and Settings\therond\Mes documents\BOULOT\fond de cartes et logos Olivier\Donnees_route120 v2\prefectures" As prefectures Interactive
+Open Table "C:\Documents and Settings\therond\Mes documents\BOULOT\Habillageroute120\Donnees_route120\contour_france" As contour_france Interactive
+Open Table "linéairesIEok" As linéairesIEok Interactive
+Open Table "A_IEok" As A_IEok Interactive
+Select *  from A_IEok  where Left$ ( Route , 1 ) = "A"  into A_IEokuniquement noselect  
+Select *  from linéairesIEok  where _Iti_Euro_2 <> "/"  into IE2 noselect  
+Select *  from linéairesIEok  where _Iti_Euro_3 <> "/"  into IE3 noselect  
+Map From stations_sites_IE,A_IEokuniquement,A_IEok,IE3,IE2,prefectures,linéairesIEok,contour_france 
+  Position (2.01042,0.520833) Units "in"
+  Width 5.88542 Units "in" Height 3.6875 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 3, 1002, "m", 0, 46.8, 45.898918964419, 47.696014502038, 600000, 2200000
+  Center (567530.831,2231501.01)
+  Zoom 999.9996906 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "m"
+shade 7 with TMJA_2005 ranges apply all use size Line (290,2,32896) 
+  0: 999 Line (20,2,0) ,
+  1000: 1999 Line (43,2,0) ,
+  2000: 5999 Line (65,2,0) ,
+  6000: 9999 Line (88,2,0) ,
+  10000: 14999 Line (110,2,0) ,
+  15000: 24999 Line (133,2,0) ,
+  25000: 39999 Line (155,2,0) ,
+  40000: 59999 Line (178,2,0) ,
+  60000: 79999 Line (200,2,0) ,
+  80000: 99000 Line (223,2,0) ,
+  100000: 119000 Line (245,2,0) ,
+  120000: 149999 Line (268,2,0) ,
+  150000: 300000 Line (290,2,32896) 
+  default Line (1,2,16777215) 
+  # use 0 round 1000 inflect off Line (1,2,16777215) at 2 by 16 color 1 # 
+shade 1 with type_comptage values 
+  "Auto" Symbol (34,16711935,12) ,
+  "Manu" Symbol (34,16776960,12) ,
+  "Manu+Auto" Symbol (34,255,12) 
+  default Symbol (40,0,12)   # color 1 # 
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Right Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Statut
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+   Object 390 Line Arrow Anchor (212189.96538564292,2308488.6164681828) Visibility Off
+  Layer 3
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (2,2,16711680)  Font ("Arial",0,9,0)
+    Label Line None Position Above Font ("Arial",257,9,0,16777215) Pen (1,2,0) 
+      With _Iti_Euro_1
+      Parallel Off Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+   Object 1165 Anchor (832656.14157624147,2018172.8513622184) 
+   Object 1896 Anchor (797483.24535849004,2028581.6483892191) 
+   Object 1931 Anchor (926159.68291009357,2127139.6767211584) 
+   Object 1179 Anchor (787359.60672802222,2126352.3691675328) 
+   Object 1075 Anchor (826379.56353122112,2106031.5396002191) 
+   Object 531 Anchor (369878.31967249338,2048799.940083934) 
+   Object 2035 Anchor (564164.44562011654,2349190.881786725) 
+   Object 1401 Anchor (328434.34464758151,2375185.4354486545) 
+   Object 1019 Anchor (529190.20937005815,2455299.3637004662) 
+   Object 340 Anchor (482813.64711962279,2517053.7426542486) 
+   Object 548 Anchor (743429.51792056148,2425614.8214344662) 
+   Object 993 Anchor (903546.70226225234,2271602.7076570364) 
+   Object 1689 Anchor (850763.75703980913,2245985.6537607061) 
+   Object 745 Anchor (913818.24747766345,1830311.4391794696) 
+   Object 900 Anchor (597137.18842403998,2667572.3510136479) 
+   Object 617 Anchor (675305.53214796039,2591114.1556967371) 
+   Object 469 Anchor (660217.34197190765,2560915.4346908252) Callout (660217.34197190765,2560915.4346908252) Angle 75.8 Visibility Off
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Above Font ("Arial",257,9,0,16777215) Pen (1,2,0) 
+      With _Iti_Euro_1
+      Parallel Off Auto On Overlap Off Duplicates Off Offset 2
+      Visibility On
+   Object 364 Anchor (398855.06419892726,2038971.8854884421) 
+   Object 1127 Anchor (470969.54901115788,2098229.7250212324) 
+   Object 1222 Anchor (377311.34161249292,2118015.6391392038) 
+   Object 373 Anchor (521676.41737398959,2109847.7815401596) 
+   Object 1805 Anchor (405474.54263801069,2078710.7530743827) 
+   Object 303 Anchor (454956.34120006842,2013164.6496161195) 
+   Object 658 Anchor (433431.17854141159,1930380.84138327) 
+   Object 132 Anchor (660482.33649628726,1920956.4079332121) 
+   Object 935 Anchor (790702.45594217943,1936848.861646292) 
+   Object 746 Anchor (672005.18745976279,2059742.0486159008) 
+   Object 2048 Anchor (602813.77670504153,2062423.4999099358) 
+   Object 670 Anchor (661486.86394538346,2120997.9445711635) 
+   Object 1124 Anchor (743223.64020317711,2084310.9248626211) 
+   Object 834 Anchor (574859.66128565976,2134091.973618228) 
+   Object 1382 Anchor (535273.05384796835,2061500.2007867303) 
+   Object 1330 Anchor (890774.95146727597,2105727.2484386317) 
+   Object 1018 Anchor (913263.74099344516,2042810.1243798225) 
+   Object 700 Anchor (864740.29919595062,1974845.0436678848) 
+   Object 1336 Anchor (538885.70941963256,1962274.2441897099) 
+   Object 290 Anchor (886385.07027806283,1891200.8338448536) 
+   Object 1839 Anchor (1019925.0108795734,1905501.029062548) 
+   Object 1390 Anchor (371250.03581620113,2205740.0543194562) 
+   Object 2221 Anchor (351385.18472144747,2274128.2326442488) 
+   Object 304 Anchor (422352.04733276606,2257246.2598187323) 
+   Object 229 Anchor (328394.93344291812,2209569.9297865909) 
+   Object 532 Anchor (416143.98062608507,2162414.1942718648) 
+   Object 2218 Anchor (463840.13082801341,2220623.6270201341) 
+   Object 877 Anchor (298646.80623916152,2321244.671521767) 
+   Object 1821 Anchor (158108.62719095888,2334885.0727637154) 
+   Object 501 Anchor (570015.74927062902,2531787.4611232411) 
+   Object 108 Anchor (565550.94096557307,2493771.5734993168) 
+   Object 1016 Anchor (285569.7331754989,2402541.3941833042) 
+   Object 1500 Anchor (899506.13724460558,2374499.7492279839) 
+   Object 2246 Anchor (905315.0509366137,2332840.0436845217) 
+   Object 1534 Anchor (919070.01963397872,2308364.9981837878) 
+   Object 1840 Anchor (850560.97264372103,2313154.9489273173) 
+   Object 779 Anchor (904003.71184191073,2234058.035977242) 
+   Object 1015 Anchor (980493.75691142748,2378673.2124939142) 
+   Object 1747 Anchor (950701.86493970163,2445881.4605953675) 
+   Object 1665 Anchor (811817.92538026499,2458658.4814932928) 
+   Object 619 Anchor (659823.00079036236,2446586.3941485481) 
+   Object 471 Anchor (661836.8675216824,2488950.9186777356) 
+   Object 2028 Anchor (679174.70425230323,2523767.5101091401) 
+   Object 219 Anchor (646844.45573835832,2378645.1434673369) 
+   Object 516 Anchor (626993.35273825482,2364928.7840024475) 
+   Object 1589 Anchor (616563.01702963572,2329901.961290353) 
+   Object 584 Anchor (432136.90999756579,2474675.6991653219) 
+   Object 739 Anchor (455054.29637444991,2430456.2129654777) 
+   Object 249 Anchor (499766.19349767629,2359553.049859371) 
+   Object 651 Anchor (266836.3502704436,2372881.9421900404) 
+   Object 1561 Anchor (355477.64879639813,2346821.0539714247) 
+   Object 1639 Anchor (415261.00924718624,2318511.3211704283) 
+   Object 446 Anchor (168348.66635613036,2411987.4808824356) 
+   Object 625 Anchor (465814.47178721457,2161263.13504729) 
+   Object 4 Anchor (535334.23286916106,2161857.2818710827) 
+   Object 1676 Anchor (605810.17393401777,2203195.1674322784) 
+   Object 490 Anchor (567376.45880018757,2235120.0762889576) 
+   Object 299 Anchor (578619.99430735654,2263355.9130812101) 
+   Object 1231 Anchor (359817.00573777244,1786243.983992964) 
+   Object 1296 Anchor (455001.93904732435,1789919.5370976522) 
+   Object 1278 Anchor (542385.74518262199,1771400.3953342265) 
+   Object 1341 Anchor (594349.99136865523,1800071.0156197862) 
+   Object 1392 Anchor (646398.67376933084,1756232.6953441144) 
+   Object 888 Anchor (796069.94122846588,1850557.2270634847) 
+   Object 1667 Anchor (943852.22048268537,1838306.2999208341) Visibility Off
+   Object 1435 Anchor (562993.90992812102,2336798.8075390006) Visibility Off
+   Object 1847 Anchor (364636.74401971023,1827526.1897708268) Visibility Off
+   Object 653 Anchor (392668.19247149845,2204369.4838503026) Visibility Off
+   Object 1019 Anchor (525719.7320105664,2459642.5013678693) Visibility Off
+   Object 1757 Anchor (767778.76835524733,2557387.673603625) 
+   Object 1428 Anchor (708510.503184014,2553280.4303269256) 
+   Object 1508 Anchor (649509.52388626861,2613450.6850746567) 
+   Object 1700 Anchor (554249.20519105229,2602638.2669022223) 
+   Object 814 Anchor (599521.10803635698,2623859.2529667467) 
+   Object 1573 Anchor (619701.70703823981,2644444.5042211623) 
+   Object 341 Anchor (461901.0766450807,2206493.6790411891) Visibility Off
+  Layer 5
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,1,0)  Font ("Arial",0,9,0)
+    Label Line None Position Above Font ("Arial",257,9,0,16777215) Pen (1,2,0) 
+      With _Iti_Euro_1+"_"+_Iti_Euro_2+"_"+_Iti_Euro_3
+      Parallel Off Auto On Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 6
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,1,0)  Font ("Arial",0,9,0)
+    Label Line None Position Above Font ("Arial",257,9,0,16777215) Pen (1,2,0) 
+      With _Iti_Euro_1+"_"+_Iti_Euro_2
+      Parallel Off Auto On Overlap Off Duplicates Off Offset 2
+      Visibility On
+   Object 1900 Anchor (852139.94131427817,2131147.7045814665) 
+   Object 2011 Anchor (337173.20644442405,1913485.0058956479) 
+   Object 445 Anchor (615797.47729253932,2452305.4869555095) 
+   Object 863 Anchor (537707.03943830251,2303806.1299978346) 
+   Object 1328 Anchor (793119.14184674562,2185506.1814508042) 
+   Object 1347 Anchor (757253.79992845375,2264689.7073971746) 
+   Object 1413 Anchor (753376.95180459786,2508386.1418146752) 
+   Object 2065 Anchor (628126.65400723973,2504109.4532714142) 
+   Object 837 Anchor (685886.86776281905,2319670.5146843377) 
+   Object 1439 Anchor (743621.18927347416,1857284.7426130264) 
+   Object 411 Anchor (712235.77856435324,1833652.684449251) 
+   Object 561 Anchor (637070.13327945699,2548722.1349782492) 
+   Object 903 Visibility Off
+  Layer 7
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (34,0,9)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Right Font ("Arial",512,9,0) Pen (1,2,0) 
+      With NOMCOMMUNE
+      Parallel Off Auto On Overlap Off Duplicates On Offset 4
+      Visibility On
+   Object 70 Text "PARIS" Anchor (600300.05216573714,2428999.9460396725) 
+   Object 43 Anchor (567599.97990570613,2322600.0045193504) 
+   Object 87 Visibility Off
+   Object 89 Visibility Off
+   Object 88 Visibility Off
+   Object 73 Visibility Off
+  Layer 8
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 9
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Statut
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+   Object 2028 Anchor (678740.49359627278,2524197.4817693201) Callout (678740.49359627278,2524197.4817693201) Angle 312.9 Visibility Off
+  Layer 10
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Nature
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+set legend 
+  layer 1 
+    display on 
+    shades off 
+    symbols on 
+    lines off 
+    count off 
+    title "POSTES DE COMPTAGE :" Font ("Arial",0,14,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending on 
+    ranges Font ("Arial",0,14,0)
+      auto display off ,
+      "Automatique" display on ,
+      "Manuel" display on ,
+      "Manuel et automatique" display on  
+set legend 
+  layer 8 
+    display on 
+    shades off 
+    symbols off 
+    lines on 
+    count off 
+    title "TRAFIC TOUS VEHICULES SUR LE RESEAU EUROPEEN" Font ("Arial",0,14,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,14,0)
+      auto display off ,
+      "Inférieur à 999" display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      "Supérieur à 150 000" display on  
+Set Window FrontWindow() Printer
+ Name "Jaws PDF Creator" Orientation Portrait Copies 1
+ Papersize 9
+Create Cartographic Legend
+  Position (2.54167,-0.114583) Units "in"
+  Width 6.54167 Units "in" Height 5.67708 Units "in" 
+  Window Title "Légende de stations_sites_IE,...,prefectures Carte"
+  Custom
+  Style Size Large
+  Default Frame Title "Légende de #" Font ("Arial",0,10,0)
+  Default Frame Style "%" Font ("Arial",0,8,0)
+  Frame From Layer 1
+    Position (31.7292,266.407) Units "in"
+    Border Pen (1,1,0) 
+  Frame From Layer 8
+    Position (30.3583,271.565) Units "in"
+    Border Pen (1,1,0) 
+  Frame From Layer 3
+    Position (31.8062,267.18) Units "in"
+    Border Pen (0,1,0) 
+    Title ""
+    Using Column object 
+    Style Font ("Arial",0,14,0)
+      Text "AUTOROUTES" Line Pen (2,2,16711680) 
+  Frame From Layer 4
+    Position (31.8062,266.92) Units "in"
+    Border Pen (0,1,0) 
+    Title ""
+    Using Column object 
+    Style Font ("Arial",0,14,0)
+      Text "AUTRES ROUTES" Line Pen (1,2,0) 
+Set Window FrontWindow() Min
+Set Window FrontWindow() Printer
+ Name "Jaws PDF Creator" Orientation Portrait Copies 1
+ Papersize 9
+Map From marianne_blocmarque_ajour 
+  Position (0.427083,0.8125) Units "in"
+  Width 5.29167 Units "in" Height 2.98958 Units "in" Min
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys NonEarth Units "ft"
+  Center (76,-85.5)
+  Zoom 306.2358 Units "ft"
+  Preserve Zoom Display Zoom
+  Distance Units "ft" Area Units "sq ft" XY Units "ft"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (25, 10000) Units "ft" 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency on 
+  color 0 
+    grayscale off 
+Set Window FrontWindow() Printer
+ Name "Jaws PDF Creator" Orientation Portrait Copies 1
+ Papersize 9
+Map From setra 
+  Position (0.0520833,0.0520833) Units "in"
+  Width 5.29167 Units "in" Height 2.98958 Units "in" Min
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys NonEarth Units "ft"
+  Center (167.5,-84.5)
+  Zoom 335.00032 Units "ft"
+  Preserve Zoom Display Zoom
+  Distance Units "ft" Area Units "sq ft" XY Units "ft"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (25, 10000) Units "ft" 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency on 
+  color 0 
+    grayscale off 
+Set Window FrontWindow() Printer
+ Name "Jaws PDF Creator" Orientation Portrait Copies 1
+ Papersize 9
+Layout
+  Position (0.395833,-0.15625) Units "in"
+  Width 9.90625 Units "in" Height 6.13542 Units "in" 
+  Dim uniqueStringName As String
+  uniqueStringName = "Set " + SessionInfo(1)
+  Set CoordSys Layout Units "in"
+  Create Frame (0.6896,-4.1215) (33.5076,39.6667)
+    Pen (1,1,0) 
+    Brush (1,16777215,16777215)
+    Title "stations_sites_IE,...,contour_france Carte"
+    FillFrame On
+  Create Rect (0.5375,0.9326) (32.666,45.9569)
+    Pen (1,2,0) 
+    Brush (1,16777215,16777215)
+  Create Frame (0.6438,33.9292) (2.7583,35.4576)
+    Pen (1,1,0) 
+    Brush (1,16777215,16777215)
+    Title "setra Carte"
+    FillFrame On
+  Create Frame (3.4167,43.7139) (6.1562,46.4604)
+    Pen (1,1,0) 
+    Brush (1,16777215,16777215)
+    Title "marianne_blocmarque_ajour Carte"
+    FillFrame On
+  Create Text
+    "TRAFIC 2005 SUR LES ITINERAIRES EUROPEENS\nEN FRANCE"
+    (0.7944,35.7799) (8.766,36.5632)
+    Font ("Arial",1,24,0)
+    Justify Center
+
+  Create Frame (1.334,37.1028) (7.6319,43.9285)
+    Pen (1,1,0) 
+    Brush (2,16777215,16777215)
+    Title "Légende de stations_sites_IE,...,prefectures Carte"
+    FillFrame Off
+  Create Text
+    "FEVRIER 2007"
+    (0.6785,45.6215) (1.8215,45.8132)
+    Font ("Arial",0,12,0)
+
+  Create Text
+    "SETRA/CSTR/SI"
+    (7.7931,45.6319) (9.0583,45.8236)
+    Font ("Arial",0,12,0)
+
+  Create Line (30.6111,45.0917) (32.1861,45.0917)
+    Pen (2,61,0) 
+  Create Text
+    "50 Km"
+    (31.1632,44.809) (31.6479,45.0007)
+    Font ("Arial",0,12,0)
+
+  Create Line (0.5382,34.0688) (9.2778,34.0688)
+    Pen (1,2,0) 
+  Create Line (9.2674,34.0688) (9.2674,45.9438)
+    Pen (1,2,0) 
+  Set Layout Ruler On Pagebreaks On Frame Contents Active
+  Zoom 24.5701 Center (19.2862,11.7012) Extents To Fit
+  Set Window FrontWindow() Autoscroll On
+  Run Command uniqueStringName
+  Undim uniqueStringName
+Set Window FrontWindow() Printer
+ Name "Jaws PDF Creator" Orientation Portrait Copies 1
+ Papersize 145

@@ -16,8 +16,7 @@ trade_data <- purrr::map_df(paste0('data/raw_data/', csv_files),
                                 mutate(commodity_code = str_extract(cn8, '^[:digit:]*'),
                                        description = str_replace(cn8, '^[:digit:]*\\s*', '')) %>%
                                 select(-cn8) %>%
-                                filter(nchar(commodity_code) == 8,
-                                       eu_non_eu != 'EU') # remove EU data as no port information from EU countries
+                                filter(nchar(commodity_code) == 8)# remove EU data as no port information from EU countries
                               
                               return(output)
                           
@@ -32,7 +31,8 @@ trade_data <-
              description,
              port_name,
              country,
-             year) %>%
+             year,
+             eu_non_eu) %>%
     summarise(value = sum(value, na.rm = TRUE),
               net_mass_kg = sum(net_mass_kg, na.rm = TRUE)) %>%
   ungroup()
@@ -75,7 +75,8 @@ trade_data <-
   group_by(commodity_code,
            description, 
            country,
-           port_type) %>%
+           port_type,
+           eu_non_eu) %>%
   summarise(value = sum(value, na.rm = TRUE),
             mass = sum(net_mass_kg, na.rm = TRUE)) %>%
   ungroup()
@@ -94,7 +95,7 @@ no_port_data_codes <-
   filter(cc_n == 1 & is.na(port_type)) %>%
   pull(commodity_code)
 
-
+# remove commodity codes with no port data from master dataset
 trade_data <-
   trade_data %>%
   filter(!commodity_code %in% no_port_data_codes)

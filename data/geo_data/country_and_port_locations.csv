@@ -1,421 +1,448 @@
-country,lon,lat
-Egypt,30.802498,26.820553
-Ivory Coast,-5.547079999999999,7.539988999999999
-Norway,8.468945999999999,60.47202399999999
-Israel,34.851612,31.046051
-United States,-95.712891,37.09024
-Tunisia,9.537499,33.886917
-Morocco,-7.092619999999999,31.791702
-South Africa,22.937506,-30.559482
-Senegal,-14.452362,14.497401
-Albania,20.168331,41.153332
-Costa Rica,-83.753428,9.748916999999999
-Kosovo,20.902977,42.6026359
-Turkey,35.243322,38.963745
-Ukraine,31.1655799,48.379433
-Iceland,-19.020835,64.963051
-Indonesia,113.921327,-0.789275
-Macao,113.543873,22.198745
-Algeria,1.659626,28.033886
-China,104.195397,35.86166
-New Zealand,174.885971,-40.900557
-Argentina,-63.61667199999999,-38.416097
-Australia,133.775136,-25.274398
-Chile,-71.542969,-35.675147
-India,78.96288,20.593684
-Pakistan,69.34511599999999,30.375321
-Syria,38.996815,34.80207499999999
-Sri Lanka,80.77179699999999,7.873053999999999
-Ghana,-1.023194,7.946527
-Iran,53.688046,32.427908
-Jordan,-95.9882368,36.1500042
-Kenya,37.906193,-0.023559
-Mexico,-102.552784,23.634501
-Thailand,100.992541,15.870032
-Ethiopia,40.489673,9.145000000000001
-Hong Kong,114.1693611,22.3193039
-Malaysia,101.975766,4.210484
-Oman,55.975413,21.4735329
-Panama,-80.782127,8.537981
-Guatemala,-90.23075899999999,15.783471
-Peru,-75.015152,-9.189967
-Switzerland,8.227511999999999,46.818188
-Canada,-106.346771,56.130366
-Dominican Rep,-70.162651,18.735693
-Japan,138.252924,36.204824
-Uganda,32.290275,1.373333
-Vietnam,108.277199,14.058324
-Singapore,103.819836,1.352083
-Cameroon,12.354722,7.369721999999999
-Tanzania,34.888822,-6.369028
-Colombia,-74.297333,4.570868
-South Korea,127.766922,35.907757
-Zimbabwe,29.154857,-19.015438
-Jamaica,-77.297508,18.109581
-Brazil,-51.92528,-14.235004
-Mozambique,35.529562,-18.665695
-Rwanda,29.873888,-1.940278
-FYR Macedonia,21.745275,41.608635
-Serbia,21.005859,44.016521
-Lebanon,35.862285,33.854721
-Nicaragua,-85.207229,12.865416
-Taiwan,120.960515,23.69781
-St Lucia,-60.978893,13.909444
-Bahrain,50.5577,26.0667
-Zambia,27.849332,-13.133897
-Honduras,-86.241905,15.199999
-Nepal,84.12400799999999,28.394857
-Ecuador,-78.18340599999999,-1.831239
-Malawi,34.301525,-13.254308
-UAE,53.847818,23.424076
-Bangladesh,90.356331,23.684994
-Gambia,-15.310139,13.443182
-Burma,95.955974,21.916221
-Madagascar,46.869107,-18.766947
-Mauritius,57.55215200000001,-20.348404
-Papua New Guinea,143.95555,-6.314992999999999
-Chad,18.732207,15.454166
-Saudi Arabia,45.079162,23.885942
-Nigeria,8.675277,9.081999
-Laos,102.495496,19.85627
-Montserrat,-62.187366,16.742498
-Dominica,-61.37097600000001,15.414999
-Montenegro,19.374389999999998,42.708678
-Bahamas,-77.39627999999999,25.03428
-Russia,105.318756,61.52401
-Cuba,-77.781167,21.521757
-Trinidad:Tobago,-61.222503,10.691803
-Cambodia,104.990963,12.565679
-Sint Maarten,-63.05483,18.04248
-Qatar,51.183884,25.354826
-Philippines,121.774017,12.879721
-Fiji,178.065032,-17.713371
-Occ Palest Terr,NA,NA
-Sudan,30.217636,12.862807
-Barbados,-59.543198,13.193887
-Grenada,-61.67899999999999,12.1165
-El Salvador,-88.89653,13.794185
-Marshall Islands,171.184478,7.131474
-Togo,0.824782,8.619543
-Br Virgin Is,-71.41555699999999,41.824337
-Congo (Dem. Rep),21.758664,-4.038333
-Afghanistan,67.709953,33.93911
-Somalia,46.199616,5.152149
-Uzbekistan,64.585262,41.377491
-Kuwait,47.481766,29.31166
-Tajikistan,71.276093,38.861034
-Benin,2.315834,9.30769
-Djibouti,42.590275,11.825138
-Kyrgyz Republic,74.766098,41.20438
-Yemen,48.516388,15.552727
-Belize,-88.49765,17.189877
-Sierra Leone,-11.779889,8.460555
-Guinea,-9.696645,9.945587
-Sao Tome-Princ.,6.613080999999999,0.18636
-Liechtenstein,9.555373,47.166
-Namibia,18.49041,-22.95764
-St Vincent,-61.1863473,13.2509747
-Andorra,1.521801,42.506285
-Venezuela,-66.58973,6.42375
-Guyana,-58.93018,4.860416
-Bolivia,-63.58865299999999,-16.290154
-Guinea-Bissau,-15.180413,11.803749
-Burkina,-1.561593,12.238333
-US Virgin Is,-64.896335,18.335765
-Georgia,-82.9000751,32.1656221
-Azerbaijan,47.576927,40.143105
-Moldova,28.369885,47.411631
-New Caledonia,165.618042,-20.904305
-Libya,17.228331,26.3351
-Turkmenistan,59.556278,38.969719
-Iraq,43.679291,33.223191
-Cook Islands,-159.777671,-21.236736
-Mauritania,-10.940835,21.00789
-Equat Guinea,10.267895,1.650801
-Mali,-3.996166,17.570692
-Swaziland,31.465866,-26.522503
-Uruguay,-55.765835,-32.522779
-Antigua:Barbuda,-61.796428,17.060816
-Palau,134.58252,7.514979999999999
-Niger,8.081666,17.607789
-Bosnia & Herz.,17.679076,43.915886
-Western Sahara,-12.885834,24.215527
-Turks & Caicos,-86.065514,43.07471899999999
-Seychelles,55.491977,-4.679574
-"Althorpe, United Kingdom",-0.7407889999999999,53.577566
-"Amble, United Kingdom",-1.585261,55.331461
-"Appledore, United Kingdom",-4.193055999999999,51.053778
-"Avonmouth, United Kingdom",-2.6914364,51.5022576
-"Baltic Wharf, Rochford, United Kingdom",0.7914949,51.621864
-"Barrow-In-Furness, United Kingdom",-3.218894,54.108967
-"Barrow-On-Humber, United Kingdom",-0.382574,53.676332
-"Barry Dock, United Kingdom",-3.2694171,51.4045758
-"Barton-On-Humber, United Kingdom",-0.443368,53.686675
-"Beckingham, United Kingdom",-0.025813,51.40817
-"Berwick, United Kingdom",-2.005395,55.770242
-"Bideford, United Kingdom",-4.206666,51.016684
-"Birkenhead, United Kingdom",-3.023009,53.38999099999999
-"Blyth, United Kingdom",-1.510277,55.126957
-"Boston, United Kingdom",-0.026577,52.97893999999999
-"Bridgwater, United Kingdom",-3.003632,51.127889
-"Bridlington, United Kingdom",-0.198802,54.08535
-"Bridport, United Kingdom",-2.758301,50.7335769
-"Brightlingsea, United Kingdom",1.021399,51.816142
-"Briton Ferry, United Kingdom",-3.824315,51.632119
-"Brixham, United Kingdom",-3.513924,50.39514
-"Burnham-on-Crouch, United Kingdom",0.814539,51.628347
-"Burton Stather, United Kingdom",-0.684465,53.649532
-"Caernarfon, United Kingdom",-4.273911,53.139551
-"Cardiff, United Kingdom",-3.17909,51.48158100000001
-"Charlestown, United Kingdom",-4.759194,50.332907
-"Chepstow, United Kingdom",-2.673804,51.641856
-"Colchester, United Kingdom",0.8918740000000001,51.895927
-"Cowes, United Kingdom",-1.300533,50.76278500000001
-"Dartmouth, United Kingdom",-3.578807,50.352517
-"Dover, United Kingdom",1.3134027,51.1278758
-"Ellesmere Port, United Kingdom",-2.897404,53.279812
-"Exeter, United Kingdom",-3.533899,50.718412
-"Exmouth, United Kingdom",-3.413702,50.619957
-"Falmouth, United Kingdom",-5.066269999999999,50.15257099999999
-"Faversham, United Kingdom",0.889358,51.315994
-"Felixstowe, United Kingdom",1.351255,51.961726
-"Fingringhoe, United Kingdom",0.9450000000000001,51.84374099999999
-"Fishguard, United Kingdom",-4.975989000000001,51.993927
-"Fleetwood, United Kingdom",-3.035673,53.916661
-"Flixborough Wharf, United Kingdom",-0.7304204,53.587368
-"Fowey, United Kingdom",-4.636525,50.33499
-"Gainsborough, United Kingdom",-0.774465,53.400575
-"Garston, United Kingdom",-2.894065,53.351786
-"Glasson Dock, United Kingdom",-2.850347,53.997847
-"Gloucester, United Kingdom",-2.238156,51.8642449
-"Goole, United Kingdom",-0.876381,53.702941
-"Great Yarmouth, United Kingdom",1.7280470000000001,52.598233
-"Grimsby, United Kingdom",-0.080784,53.567471
-"Grove Wharves, United Kingdom",-0.7182782,53.6057633
-"Guness Wharf, United Kingdom",-0.7304204,53.587368
-"Hartlepool, United Kingdom",-1.212926,54.691745
-"Harwich, United Kingdom",1.260297,51.934731
-"Heysham, United Kingdom",-2.894475,54.04199
-"Holehaven, United Kingdom",0.533718,51.5190776
-"Holyhead, United Kingdom",-4.633038,53.309441
-"Howdendyke, United Kingdom",-0.8509374,53.73366309999999
-"Hull, United Kingdom",-0.3274198,53.76762360000001
-"Immingham, United Kingdom",-0.215913,53.614012
-"Ipswich, United Kingdom",1.14822,52.056736
-"Keadby, United Kingdom",-0.73951,53.59669299999999
-"Kings Lynn, United Kingdom",0.4022963000000001,52.7516798
-"Lancaster, United Kingdom",-2.8007399,54.046575
-"Leigh-On-Sea, United Kingdom",0.6472768999999999,51.5474028
-"Littlehampton, United Kingdom",-0.5386609,50.811057
-"Liverpool, United Kingdom",-2.9915726,53.4083714
-"Llanddulas, United Kingdom",-3.642969,53.287553
-"Llanelli, United Kingdom",-4.160248,51.680886
-"London, United Kingdom",-0.1277583,51.5073509
-"London Gateway, United Kingdom",0.4595977,51.5100908
-"Lowestoft, United Kingdom",1.753449,52.48113799999999
-"Lymington, United Kingdom",-1.5419099,50.758531
-"Maldon, United Kingdom",0.6714479999999999,51.73180499999999
-"Manchester, United Kingdom",-2.2426305,53.4807593
-"Medway, United Kingdom",0.5417860999999999,51.4047432
-"Middlesbrough, United Kingdom",-1.234956,54.574227
-"Milford, United Kingdom",-0.650139,51.173466
-"Millom, United Kingdom",-3.2718854,54.2106147
-"Mistley, United Kingdom",1.0773489,51.94562500000001
-"Mostyn, United Kingdom",-3.2692784,53.31297989999999
-"Neap House, United Kingdom",-0.7011379999999999,53.608683
-"Neath Abbey, United Kingdom",-3.8259536,51.6637073
-"Newcastle, United Kingdom",-1.61778,54.978252
-"Newhaven, United Kingdom",0.045574,50.79307000000001
-"New Holland, United Kingdom",-0.3630507,53.6984122
-"Newlyn, United Kingdom",-5.550328899999999,50.10705799999999
-"Newport, Gwent, United Kingdom",-2.997664,51.584151
-"North Shields, United Kingdom",-1.449138,55.010762
-"Northwich, United Kingdom",-2.5181321,53.25868029999999
-"Norwich, United Kingdom",1.297355,52.6308859
-"Padstow, United Kingdom",-4.939017,50.54206199999999
-"Par, United Kingdom",-4.702452,50.35081700000001
-"Parkeston Quay, United Kingdom",1.255846,51.94448
-"Partington, United Kingdom",-2.4280849,53.418359
-"Pembroke Ferry, United Kingdom",-4.9331649,51.7028775
-"Pembroke (Oils) So, United Kingdom",-4.9088785,51.67407799999999
-"Pembroke Epu, United Kingdom",-77.04428419999999,38.8985658
-"Penryn, United Kingdom",-5.107088000000001,50.169173
-"Penzance, United Kingdom",-5.537592,50.118798
-"Plymouth, United Kingdom",-4.1426565,50.3754565
-"Point Bid, United Kingdom",-0.143055,51.51647999999999
-"Poole, United Kingdom",-1.987248,50.71505
-"Port Penrhyn, United Kingdom",-4.1095952,53.2329758
-"Portishead, United Kingdom",-2.767948,51.485155
-"Portland, United Kingdom",-2.4343209,50.5475363
-"Portsmouth, United Kingdom",-1.0879769,50.8197675
-"Port Talbot, United Kingdom",-3.784097,51.5946799
-"Queenborough, United Kingdom",0.7470207,51.4172853
-"Ramsgate, United Kingdom",1.419895,51.335545
-"Rhyl, United Kingdom",-3.491634,53.31914099999999
-"Ridham Dock, United Kingdom",0.7568355999999999,51.3801296
-"Rochester, United Kingdom",0.506721,51.38800000000001
-"Rochford, United Kingdom",0.706515,51.582071
-"Rowhedge, United Kingdom",0.9460989999999999,51.857704
-"Royal Portbury Dock, United Kingdom",-2.7203302,51.4966839
-"Runcorn, United Kingdom",-2.729673,53.342078
-"Rye, United Kingdom",0.7372599999999999,50.949708
-"Scarborough, United Kingdom",-0.399752,54.283113
-"Scunthorpe, United Kingdom",-0.654413,53.588646
-"Seaham, United Kingdom",-1.337517,54.840346
-"Selby, United Kingdom",-1.067189,53.78352400000001
-"Sharpness, United Kingdom",-2.4674595,51.7236003
-"Sheerness, United Kingdom",0.764158,51.44011
-"Shoreham, United Kingdom",-0.2715558,50.8342086
-"Shotton, United Kingdom",-3.0380242,53.2115447
-"Silloth, United Kingdom",-3.389471,54.868394
-"Southampton, United Kingdom",-1.4043509,50.90970040000001
-"Southend (Corporation Jetty), United Kingdom",-75.2767463,40.132688
-"South Shields, United Kingdom",-1.427406,54.999424
-"Sunderland, United Kingdom",-1.383801,54.906869
-"Swansea, United Kingdom",-3.943645999999999,51.62144
-"Teesport, United Kingdom",-1.184834,54.58699679999999
-"Teignmouth, United Kingdom",-3.496688,50.54703300000001
-"Tilbury, United Kingdom",0.360498,51.463024
-"Thames Europort, United Kingdom",0.2631414,51.4553891
-"Thamesport, United Kingdom",NA,NA
-"Topsham, United Kingdom",-3.466689,50.684555
-"Torquay, United Kingdom",-3.525315,50.4619209
-"Trent, United Kingdom",-1.1574246,52.9376907
-"Truro, United Kingdom",-5.051041,50.263195
-"Tyne, United Kingdom",-1.61778,54.978252
-"Warrington, United Kingdom",-2.5969501,53.3900441
-"Watchet, United Kingdom",-3.329177,51.181769
-"Wells, United Kingdom",-2.6445979,51.209347
-"Weymouth, United Kingdom",-2.4546253,50.6099306
-"Whitby, United Kingdom",-0.613347,54.486335
-"Whitehaven, United Kingdom",-3.589233,54.549699
-"Whitstable, United Kingdom",1.024256,51.361047
-"Wisbech, United Kingdom",0.158797,52.666317
-"Wivenhoe, United Kingdom",0.9652740000000001,51.857997
-"Workington, United Kingdom",-3.542752,54.643569
-"Castletown, United Kingdom",-2.437715,50.559233
-"Douglas, United Kingdom",-3.847176,55.55733499999999
-"Peel, United Kingdom",-73.980845,40.7529773
-"Ramsey, United Kingdom",-0.1084655,52.4503619
-"St Helier, United Kingdom",-0.1905439,51.3957054
-"St Peter Port, United Kingdom",-2.5497069,49.4541677
-"Aberdeen, United Kingdom",-2.094278,57.149717
-"Annan, United Kingdom",-3.259773,54.990246
-"Arbroath, United Kingdom",-2.591543,56.559107
-"Ardrossan, United Kingdom",-4.81182,55.64388899999999
-"Ayr, United Kingdom",-4.629179000000001,55.458564
-"Barcaldine, United Kingdom",-5.3139514,56.52044600000001
-"Braefoot Bay, United Kingdom",-3.315716,56.03516399999999
-"Bowling, United Kingdom",-83.6901437,43.45082319999999
-"Buckie, United Kingdom",-2.967311,57.67739199999999
-"Burghead, United Kingdom",-3.489213,57.700232
-"Burntisland, United Kingdom",-3.2339151,56.058809
-"Campbeltown, United Kingdom",-5.605373999999999,55.424117
-"Corpach, Incl Annat Pier, United Kingdom",-5.1286669,56.84406509999999
-"Dundee, United Kingdom",-2.970721,56.462018
-"Faslane, United Kingdom",-4.8187095,56.05739519999999
-"Finnart, United Kingdom",-4.8391025,56.0992308
-"Fraserburgh, United Kingdom",-2.007631,57.693352
-"Furnace, United Kingdom",-123.1143016,49.28538760000001
-"Garlieston, United Kingdom",-4.3718389,54.789343
-"Girvan, United Kingdom",-4.8542179,55.240164
-"Glasgow, United Kingdom",-4.251806,55.864237
-"Grangemouth, United Kingdom",-3.7227698,56.0097152
-"Greenock, United Kingdom",-4.771983,55.95647599999999
-"Hound Point Terminal, United Kingdom",-3.3591557,56.0059099
-"Hunterston, United Kingdom",-4.8983287,55.7233313
-"Invergordon, United Kingdom",-4.172882,57.688106
-"Inverkeithing, United Kingdom",-3.398795,56.030043
-"Inverness, United Kingdom",-4.224721,57.477773
-"Irvine, United Kingdom",-4.6696364,55.61156690000001
-"Islay, United Kingdom",-6.177067,55.7362535
-"Kirkcaldy, United Kingdom",-3.158137,56.1168249
-"Kirkwall, United Kingdom",-2.9622491,58.98467400000001
-"Leith, United Kingdom",-3.1665102,55.97552779999999
-"Lerwick, United Kingdom",-1.1492931,60.1529871
-"Lochaline, United Kingdom",-5.777343,56.53486299999999
-"Lossiemouth, United Kingdom",-3.280325,57.72157899999999
-"Macduff, United Kingdom",-2.497849,57.67058999999999
-"Methil, United Kingdom",-3.0164019,56.184843
-"Montrose, United Kingdom",-2.466115,56.706922
-"Oban, United Kingdom",-5.471047,56.415157
-"Palnackie, United Kingdom",-3.840674999999999,54.89191
-"Perth, United Kingdom",-3.4308381,56.394994
-"Peterhead, United Kingdom",-1.784066,57.50812299999999
-"Rosyth, United Kingdom",-3.423064,56.03646999999999
-"Scalloway, United Kingdom",-1.282203,60.137715
-"Scrabster, United Kingdom",-3.552627,58.61102599999999
-"Stornoway, United Kingdom",-6.3848692,58.209435
-"Stranraer, United Kingdom",-5.024055,54.903367
-"Stromness, United Kingdom",-3.296495,58.96619399999999
-"Tayport, United Kingdom",-2.8809121,56.447996
-"Ullapool, United Kingdom",-5.161313,57.895418
-"Wick, United Kingdom",-3.093716,58.438936
-"Belfast, United Kingdom",-5.93012,54.59728500000001
-"Coleraine, United Kingdom",-6.664610300000001,55.1325802
-"Larne, United Kingdom",-5.8236224,54.8578003
-"Londonderry, United Kingdom",-7.3085748,54.9966124
-"Portrush, United Kingdom",-6.6526708,55.2041945
-"Warrenpoint, United Kingdom",-6.252077799999999,54.105301
-"Aberdeen Airport, United Kingdom",-2.2002149,57.203715
-"Belfast International Airport, United Kingdom",-6.2171452,54.656309
-"Biggin Hill Airport, United Kingdom",0.0284059,51.3305701
-"Birmingham Airport, United Kingdom",-1.7435071,52.45238209999999
-"Blackpool International Airport, United Kingdom",-3.0435221,53.7782974
-"Bournemouth Airport, United Kingdom",-1.8323059,50.7775437
-"Bristol Airport, United Kingdom",-2.7135463,51.38363039999999
-"Cambridge Airport, United Kingdom",0.1712947,52.20693199999999
-"Cardiff Airport, United Kingdom",-3.3460994,51.3977701
-"Coventry Airport, United Kingdom",-1.4812741,52.37226709999999
-"Durham Tees Valley (Teesside) Airport, United Kingdom",-1.4277807,54.5093243
-"East Midlands Airport, United Kingdom",-1.332134,52.82937399999999
-"Edinburgh Airport, United Kingdom",-3.3614532,55.950785
-"Exeter Airport, United Kingdom",-3.4163957,50.7307465
-"Farnborough Airport, United Kingdom",-0.777307,51.283039
-"Filton Aerodrome (Bristol), United Kingdom",-2.576467,51.507864
-"Glasgow Airport, United Kingdom",-4.4350529,55.8690744
-"Humberside International Airport, United Kingdom",-0.3502052,53.57554289999999
-"Leeds Bradford Airport, United Kingdom",-1.6615306,53.86794339999999
-"Liverpool John Lennon Airport, United Kingdom",-2.8550475,53.3358627
-"London Ashford (Lydd) Airport, United Kingdom",0.9335221,50.9557337
-"London City Airport, United Kingdom",0.049518,51.5048437
-"London Gatwick Airport, United Kingdom",-0.1820629,51.1536621
-"London Heathrow Airport, United Kingdom",-0.4542955,51.4700223
-"London Luton Airport, United Kingdom",-0.3717471,51.87626460000001
-"London Stansted Airport, United Kingdom",0.2388661,51.8860181
-"Manchester Airport, United Kingdom",-2.2727303,53.3588026
-"Manston Airport, United Kingdom",1.3586653,51.3469491
-"Newcastle Airport, United Kingdom",-1.7098663,55.0374478
-"Newquay Airport, United Kingdom",-5.0088135,50.4399636
-"Norwich Airport, United Kingdom",1.2837392,52.6756294
-"Plymouth Airport, United Kingdom",-4.1572944,50.3688722
-"Prestwick Airport, United Kingdom",-4.592294,55.5098091
-"Ronaldsway Airport (Isle of Man), United Kingdom",-4.633939799999999,54.0865957
-"Shoreham Airport, United Kingdom",-0.2906287,50.8334678
-"Southampton (Eastleigh) Airport, United Kingdom",-1.3577199,50.95147069999999
-"Southend Airport, United Kingdom",0.6924653,51.57018979999999
-"Sumburgh Airport (Shetland), United Kingdom",-1.2890447,59.8777809
-"George Best Belfast City Airport, United Kingdom",-5.871830399999999,54.6176164
-"Gloucester (Staverton) Airport, United Kingdom",-2.1577797,51.8929214
-"Kemble Airport, United Kingdom",-2.048209,51.670539
-"Lasham Airport, United Kingdom",-1.033482,51.18604389999999
-"Oxford Airport (Kidlington), United Kingdom",-1.3157603,51.8327858
-"Robin Hood Doncaster Sheffield, United Kingdom",-1.0054727,53.47782249999999
-"Stornoway Airport, United Kingdom",-6.3219232,58.21387099999999
-"Warton Aerodrome, United Kingdom",-2.892395,53.7499492
-"Wick Airport, United Kingdom",-3.087864,58.45328839999999
-"Yeovil Aerodrome, United Kingdom",-2.6579611,50.9399186
-"Brize Norton, United Kingdom",-1.566767,51.767658
-"Fairford, United Kingdom",-1.785135,51.70753699999999
-"Feltwell, United Kingdom",0.519412,52.48637799999999
-"Lakenheath, United Kingdom",0.5218539999999999,52.413917
-"Lyneham, United Kingdom",-1.97945,51.51402299999999
-"Menwith Hill, United Kingdom",-1.6901547,54.0114606
-"Mildenhall, United Kingdom",0.5156094999999999,52.347568
-"All Other Airports, United Kingdom",-79.6248197,43.67771760000001
-"Ashford, United Kingdom",0.875019,51.1464659
-"Barking, United Kingdom",0.075766,51.536563
-"Dagenham, United Kingdom",0.14743,51.53888999999999
-"Daventry, United Kingdom",-1.164947,52.257473
-"Dollands Moor, United Kingdom",1.1056052,51.092479
-"Widnes, United Kingdom",-2.733637,53.361024
+country,eu_non_eu,lon,lat
+Belgium,EU,4.469936,50.503887
+Denmark,EU,9.501785,56.26392
+Egypt,NON-EU,30.802498,26.820553
+France,EU,2.213749,46.227638
+Germany,EU,10.451526,51.165691
+Greece,EU,21.824312,39.074208
+Irish Republic,EU,-8.24389,53.41291
+Israel,NON-EU,34.851612,31.046051
+Italy,EU,12.56738,41.87194
+Ivory Coast,NON-EU,-5.547079999999999,7.539988999999999
+Netherlands,EU,5.291265999999999,52.132633
+Norway,NON-EU,8.468945999999999,60.47202399999999
+Poland,EU,19.145136,51.919438
+Portugal,EU,-8.224454,39.39987199999999
+Spain,EU,-3.74922,40.46366700000001
+United States,NON-EU,-95.712891,37.09024
+Cyprus,EU,33.429859,35.126413
+Tunisia,NON-EU,9.537499,33.886917
+Austria,EU,14.550072,47.516231
+Bulgaria,EU,25.48583,42.733883
+Croatia,EU,15.2000001,45.1
+Czech Republic,EU,15.472962,49.81749199999999
+Finland,EU,25.7481511,61.92410999999999
+Hungary,EU,19.5033041,47.162494
+Lithuania,EU,23.881275,55.169438
+Luxembourg,EU,6.129582999999999,49.815273
+Malta,EU,14.375416,35.937496
+Morocco,NON-EU,-7.092619999999999,31.791702
+Romania,EU,24.96676,45.943161
+Slovakia,EU,19.699024,48.669026
+Slovenia,EU,14.995463,46.151241
+South Africa,NON-EU,22.937506,-30.559482
+Sweden,EU,18.643501,60.12816100000001
+Albania,NON-EU,20.168331,41.153332
+Algeria,NON-EU,1.659626,28.033886
+China,NON-EU,104.195397,35.86166
+Costa Rica,NON-EU,-83.753428,9.748916999999999
+Estonia,EU,25.0136071,58.595272
+Iceland,NON-EU,-19.020835,64.963051
+Indonesia,NON-EU,113.921327,-0.789275
+Kosovo,NON-EU,20.902977,42.6026359
+Latvia,EU,24.603189,56.879635
+Macao,NON-EU,113.543873,22.198745
+Senegal,NON-EU,-14.452362,14.497401
+Turkey,NON-EU,35.243322,38.963745
+Ukraine,NON-EU,31.1655799,48.379433
+Argentina,NON-EU,-63.61667199999999,-38.416097
+Australia,NON-EU,133.775136,-25.274398
+Chile,NON-EU,-71.542969,-35.675147
+Ghana,NON-EU,-1.023194,7.946527
+India,NON-EU,78.96288,20.593684
+Iran,NON-EU,53.688046,32.427908
+Jordan,NON-EU,36.2384,30.5852
+Kenya,NON-EU,37.906193,-0.023559
+Mexico,NON-EU,-102.552784,23.634501
+New Zealand,NON-EU,174.885971,-40.900557
+Pakistan,NON-EU,69.34511599999999,30.375321
+Sri Lanka,NON-EU,80.77179699999999,7.873053999999999
+Syria,NON-EU,38.996815,34.80207499999999
+Thailand,NON-EU,100.992541,15.870032
+Canada,NON-EU,-106.346771,56.130366
+Dominican Rep,NON-EU,-70.162651,18.735693
+Ethiopia,NON-EU,40.489673,9.145000000000001
+Guatemala,NON-EU,-90.23075899999999,15.783471
+Hong Kong,NON-EU,114.1693611,22.3193039
+Japan,NON-EU,138.252924,36.204824
+Malaysia,NON-EU,101.975766,4.210484
+Oman,NON-EU,55.975413,21.4735329
+Panama,NON-EU,-80.782127,8.537981
+Peru,NON-EU,-75.015152,-9.189967
+Switzerland,NON-EU,8.227511999999999,46.818188
+Uganda,NON-EU,32.290275,1.373333
+Vietnam,NON-EU,108.277199,14.058324
+Singapore,NON-EU,103.819836,1.352083
+Cameroon,NON-EU,12.354722,7.369721999999999
+Colombia,NON-EU,-74.297333,4.570868
+South Korea,NON-EU,127.766922,35.907757
+Tanzania,NON-EU,34.888822,-6.369028
+Zimbabwe,NON-EU,29.154857,-19.015438
+Brazil,NON-EU,-51.92528,-14.235004
+Jamaica,NON-EU,-77.297508,18.109581
+Mozambique,NON-EU,35.529562,-18.665695
+Rwanda,NON-EU,29.873888,-1.940278
+FYR Macedonia,NON-EU,21.745275,41.608635
+Serbia,NON-EU,21.005859,44.016521
+Lebanon,NON-EU,35.862285,33.854721
+Nicaragua,NON-EU,-85.207229,12.865416
+Taiwan,NON-EU,120.960515,23.69781
+Bahrain,NON-EU,50.5577,26.0667
+St Lucia,NON-EU,-60.978893,13.909444
+Ecuador,NON-EU,-78.18340599999999,-1.831239
+Honduras,NON-EU,-86.241905,15.199999
+Malawi,NON-EU,34.301525,-13.254308
+Nepal,NON-EU,84.12400799999999,28.394857
+UAE,NON-EU,53.847818,23.424076
+Zambia,NON-EU,27.849332,-13.133897
+Bangladesh,NON-EU,90.356331,23.684994
+Burma,NON-EU,95.955974,21.916221
+Chad,NON-EU,-95.9763576,36.7502524
+Gambia,NON-EU,-15.310139,13.443182
+Madagascar,NON-EU,46.869107,-18.766947
+Mauritius,NON-EU,57.55215200000001,-20.348404
+Papua New Guinea,NON-EU,143.95555,-6.314992999999999
+Saudi Arabia,NON-EU,45.079162,23.885942
+Nigeria,NON-EU,8.675277,9.081999
+Laos,NON-EU,102.495496,19.85627
+Montserrat,NON-EU,-62.187366,16.742498
+Dominica,NON-EU,-61.37097600000001,15.414999
+Bahamas,NON-EU,-77.39627999999999,25.03428
+Montenegro,NON-EU,19.374389999999998,42.708678
+Russia,NON-EU,105.318756,61.52401
+Cambodia,NON-EU,104.990963,12.565679
+Cuba,NON-EU,-77.781167,21.521757
+Sint Maarten,NON-EU,-63.05483,18.04248
+Trinidad:Tobago,NON-EU,-61.222503,10.691803
+Qatar,NON-EU,51.183884,25.354826
+Philippines,NON-EU,121.774017,12.879721
+Barbados,NON-EU,-59.543198,13.193887
+El Salvador,NON-EU,-88.89653,13.794185
+Fiji,NON-EU,178.065032,-17.713371
+Grenada,NON-EU,-61.67899999999999,12.1165
+Marshall Islands,NON-EU,171.184478,7.131474
+Occ Palest Terr,NON-EU,35.2272,31.9474
+Sudan,NON-EU,30.217636,12.862807
+Togo,NON-EU,0.824782,8.619543
+Br Virgin Is,NON-EU,64.6333,18.4335
+Congo (Dem. Rep),NON-EU,21.758664,-4.038333
+Afghanistan,NON-EU,67.709953,33.93911
+Somalia,NON-EU,46.199616,5.152149
+Uzbekistan,NON-EU,64.585262,41.377491
+Kuwait,NON-EU,47.481766,29.31166
+Tajikistan,NON-EU,71.276093,38.861034
+Benin,NON-EU,2.315834,9.30769
+Djibouti,NON-EU,42.590275,11.825138
+Kyrgyz Republic,NON-EU,74.766098,41.20438
+Yemen,NON-EU,48.516388,15.552727
+Belize,NON-EU,-88.49765,17.189877
+Sierra Leone,NON-EU,-11.779889,8.460555
+Guinea,NON-EU,-9.696645,9.945587
+Liechtenstein,NON-EU,9.555373,47.166
+Sao Tome-Princ.,NON-EU,6.613080999999999,0.18636
+Namibia,NON-EU,18.49041,-22.95764
+St Vincent,NON-EU,-95.25156199999999,37.3401932
+Andorra,NON-EU,1.521801,42.506285
+Venezuela,NON-EU,-66.58973,6.42375
+Guyana,NON-EU,-58.93018,4.860416
+Bolivia,NON-EU,-63.58865299999999,-16.290154
+Guinea-Bissau,NON-EU,-15.180413,11.803749
+Burkina,NON-EU,-1.561593,12.238333
+US Virgin Is,NON-EU,-64.896335,18.335765
+Azerbaijan,NON-EU,47.576927,40.143105
+Georgia,NON-EU,43.3569,42.3154
+Moldova,NON-EU,28.369885,47.411631
+New Caledonia,NON-EU,165.618042,-20.904305
+Iraq,NON-EU,43.679291,33.223191
+Libya,NON-EU,17.228331,26.3351
+Turkmenistan,NON-EU,59.556278,38.969719
+Cook Islands,NON-EU,-159.777671,-21.236736
+Mauritania,NON-EU,-10.940835,21.00789
+Equat Guinea,NON-EU,10.267895,1.650801
+Mali,NON-EU,-3.996166,17.570692
+Swaziland,NON-EU,31.465866,-26.522503
+Uruguay,NON-EU,-55.765835,-32.522779
+Antigua:Barbuda,NON-EU,-61.796428,17.060816
+Palau,NON-EU,134.58252,7.514979999999999
+Niger,NON-EU,8.081666,17.607789
+Bosnia & Herz.,NON-EU,17.679076,43.915886
+Western Sahara,NON-EU,-12.885834,24.215527
+Turks & Caicos,NON-EU,71.7979,21.694
+Seychelles,NON-EU,55.491977,-4.679574
+"Althorpe, United Kingdom",NA,-0.7407889999999999,53.577566
+"Amble, United Kingdom",NA,-1.585261,55.331461
+"Appledore, United Kingdom",NA,-4.193055999999999,51.053778
+"Avonmouth, United Kingdom",NA,-2.6914364,51.5022576
+"Baltic Wharf, Rochford, United Kingdom",NA,0.7914949,51.621864
+"Barrow-In-Furness, United Kingdom",NA,-3.218894,54.108967
+"Barrow-On-Humber, United Kingdom",NA,-0.382574,53.676332
+"Barry Dock, United Kingdom",NA,-3.2583127,51.396183
+"Barton-On-Humber, United Kingdom",NA,-0.443368,53.686675
+"Beckingham, United Kingdom",NA,-0.025813,51.40817
+"Berwick, United Kingdom",NA,-2.005395,55.770242
+"Bideford, United Kingdom",NA,-4.206666,51.016684
+"Birkenhead, United Kingdom",NA,-3.023009,53.38999099999999
+"Blyth, United Kingdom",NA,-1.510277,55.126957
+"Boston, United Kingdom",NA,-0.026577,52.97893999999999
+"Bridgwater, United Kingdom",NA,-3.003632,51.127889
+"Bridlington, United Kingdom",NA,-0.198802,54.08535
+"Bridport, United Kingdom",NA,-2.758301,50.7335769
+"Brightlingsea, United Kingdom",NA,1.021399,51.816142
+"Briton Ferry, United Kingdom",NA,-3.824315,51.632119
+"Brixham, United Kingdom",NA,-3.513924,50.39514
+"Burnham-on-Crouch, United Kingdom",NA,0.814539,51.628347
+"Burton Stather, United Kingdom",NA,-0.684465,53.649532
+"Caernarfon, United Kingdom",NA,-4.273911,53.139551
+"Cardiff, United Kingdom",NA,-3.17909,51.48158100000001
+"Charlestown, United Kingdom",NA,-4.759194,50.332907
+"Chepstow, United Kingdom",NA,-2.673804,51.641856
+"Colchester, United Kingdom",NA,0.8918740000000001,51.895927
+"Cowes, United Kingdom",NA,-1.300533,50.76278500000001
+"Dartmouth, United Kingdom",NA,-3.578807,50.352517
+"Dover, United Kingdom",NA,1.3134027,51.1278758
+"Ellesmere Port, United Kingdom",NA,-2.897404,53.279812
+"Exeter, United Kingdom",NA,-3.533899,50.718412
+"Exmouth, United Kingdom",NA,-3.413702,50.619957
+"Falmouth, United Kingdom",NA,-5.066269999999999,50.15257099999999
+"Faversham, United Kingdom",NA,0.889358,51.315994
+"Felixstowe, United Kingdom",NA,1.351255,51.961726
+"Fingringhoe, United Kingdom",NA,0.9450000000000001,51.84374099999999
+"Fishguard, United Kingdom",NA,-4.975989000000001,51.993927
+"Fleetwood, United Kingdom",NA,-3.035673,53.916661
+"Flixborough Wharf, United Kingdom",NA,-0.6850229999999999,53.625194
+"Fowey, United Kingdom",NA,-4.636525,50.33499
+"Gainsborough, United Kingdom",NA,-0.774465,53.400575
+"Garston, United Kingdom",NA,-2.894065,53.351786
+"Glasson Dock, United Kingdom",NA,-2.850347,53.997847
+"Gloucester, United Kingdom",NA,-2.238156,51.8642449
+"Goole, United Kingdom",NA,-0.876381,53.702941
+"Great Yarmouth, United Kingdom",NA,1.7280470000000001,52.598233
+"Grimsby, United Kingdom",NA,-0.080784,53.567471
+"Grove Wharves, United Kingdom",NA,-0.7182782,53.6057633
+"Guness Wharf, United Kingdom",NA,-0.7304204,53.587368
+"Hartlepool, United Kingdom",NA,-1.212926,54.691745
+"Harwich, United Kingdom",NA,1.260297,51.934731
+"Heysham, United Kingdom",NA,-2.894475,54.04199
+"Holehaven, United Kingdom",NA,0.533718,51.5190776
+"Holyhead, United Kingdom",NA,-4.633038,53.309441
+"Howdendyke, United Kingdom",NA,-0.8509374,53.73366309999999
+"Hull, United Kingdom",NA,-0.3274198,53.76762360000001
+"Immingham, United Kingdom",NA,-0.215913,53.614012
+"Ipswich, United Kingdom",NA,1.14822,52.056736
+"Keadby, United Kingdom",NA,-0.73951,53.59669299999999
+"Kings Lynn, United Kingdom",NA,0.4022963000000001,52.7516798
+"Lancaster, United Kingdom",NA,-2.8007399,54.046575
+"Leigh-On-Sea, United Kingdom",NA,0.6472768999999999,51.5474028
+"Littlehampton, United Kingdom",NA,-0.5386609,50.811057
+"Liverpool, United Kingdom",NA,-2.9915726,53.4083714
+"Llanddulas, United Kingdom",NA,-3.642969,53.287553
+"Llanelli, United Kingdom",NA,-4.160248,51.680886
+"London, United Kingdom",NA,-0.1277583,51.5073509
+"London Gateway, United Kingdom",NA,0.4595977,51.5100908
+"Lowestoft, United Kingdom",NA,1.753449,52.48113799999999
+"Lymington, United Kingdom",NA,-1.5419099,50.758531
+"Maldon, United Kingdom",NA,0.6714479999999999,51.73180499999999
+"Manchester, United Kingdom",NA,-2.2426305,53.4807593
+"Medway, United Kingdom",NA,0.5417860999999999,51.4047432
+"Middlesbrough, United Kingdom",NA,-1.234956,54.574227
+"Milford, United Kingdom",NA,-0.650139,51.173466
+"Millom, United Kingdom",NA,-3.2718854,54.2106147
+"Mistley, United Kingdom",NA,1.0773489,51.94562500000001
+"Mostyn, United Kingdom",NA,-3.2692784,53.31297989999999
+"Neap House, United Kingdom",NA,-0.7011379999999999,53.608683
+"Neath Abbey, United Kingdom",NA,-3.8259536,51.6637073
+"Newcastle, United Kingdom",NA,-1.61778,54.978252
+"Newhaven, United Kingdom",NA,0.045574,50.79307000000001
+"New Holland, United Kingdom",NA,-0.3630507,53.6984122
+"Newlyn, United Kingdom",NA,-5.550328899999999,50.10705799999999
+"Newport, Gwent, United Kingdom",NA,-2.997664,51.584151
+"North Shields, United Kingdom",NA,-1.449138,55.010762
+"Northwich, United Kingdom",NA,-2.5181321,53.25868029999999
+"Norwich, United Kingdom",NA,1.297355,52.6308859
+"Padstow, United Kingdom",NA,-4.939017,50.54206199999999
+"Par, United Kingdom",NA,-4.702452,50.35081700000001
+"Parkeston Quay, United Kingdom",NA,1.255846,51.94448
+"Partington, United Kingdom",NA,-2.4280849,53.418359
+"Pembroke Ferry, United Kingdom",NA,NA,NA
+"Pembroke (Oils) So, United Kingdom",NA,-4.9311457,51.6729808
+"Pembroke Epu, United Kingdom",NA,-4.9129,51.6746
+"Penryn, United Kingdom",NA,-5.107088000000001,50.169173
+"Penzance, United Kingdom",NA,-5.537592,50.118798
+"Plymouth, United Kingdom",NA,-4.1426565,50.3754565
+"Point Bid, United Kingdom",NA,-0.6361275,51.5298702
+"Poole, United Kingdom",NA,-1.987248,50.71505
+"Port Penrhyn, United Kingdom",NA,-4.1095952,53.2329758
+"Portishead, United Kingdom",NA,-2.767948,51.485155
+"Portland, United Kingdom",NA,-2.4343209,50.5475363
+"Portsmouth, United Kingdom",NA,-1.0879769,50.8197675
+"Port Talbot, United Kingdom",NA,-3.784097,51.5946799
+"Queenborough, United Kingdom",NA,0.7470207,51.4172853
+"Ramsgate, United Kingdom",NA,1.419895,51.335545
+"Rhyl, United Kingdom",NA,-3.491634,53.31914099999999
+"Ridham Dock, United Kingdom",NA,0.7568355999999999,51.3801296
+"Rochester, United Kingdom",NA,0.506721,51.38800000000001
+"Rochford, United Kingdom",NA,0.706515,51.582071
+"Rowhedge, United Kingdom",NA,0.9460989999999999,51.857704
+"Royal Portbury Dock, United Kingdom",NA,-2.7203302,51.4966839
+"Runcorn, United Kingdom",NA,-2.729673,53.342078
+"Rye, United Kingdom",NA,0.7372599999999999,50.949708
+"Scarborough, United Kingdom",NA,-0.399752,54.283113
+"Scunthorpe, United Kingdom",NA,-0.654413,53.588646
+"Seaham, United Kingdom",NA,-1.337517,54.840346
+"Selby, United Kingdom",NA,-1.067189,53.78352400000001
+"Sharpness, United Kingdom",NA,-2.4674595,51.7236003
+"Sheerness, United Kingdom",NA,0.764158,51.44011
+"Shoreham, United Kingdom",NA,-0.2715558,50.8342086
+"Shotton, United Kingdom",NA,-3.0380242,53.2115447
+"Silloth, United Kingdom",NA,-3.389471,54.868394
+"Southampton, United Kingdom",NA,-1.4043509,50.90970040000001
+"Southend (Corporation Jetty), United Kingdom",NA,0.730685,51.530133
+"South Shields, United Kingdom",NA,-1.427406,54.999424
+"Sunderland, United Kingdom",NA,-1.383801,54.906869
+"Swansea, United Kingdom",NA,-3.943645999999999,51.62144
+"Teesport, United Kingdom",NA,-81.13599649999999,32.1168389
+"Teignmouth, United Kingdom",NA,-3.496688,50.54703300000001
+"Tilbury, United Kingdom",NA,0.360498,51.463024
+"Thames Europort, United Kingdom",NA,0.2631414,51.4553891
+"Thamesport, United Kingdom",NA,0.686905,51.431285
+"Topsham, United Kingdom",NA,-3.466689,50.684555
+"Torquay, United Kingdom",NA,-3.525315,50.4619209
+"Trent, United Kingdom",NA,-1.1574246,52.9376907
+"Truro, United Kingdom",NA,-5.051041,50.263195
+"Tyne, United Kingdom",NA,-1.61778,54.978252
+"Warrington, United Kingdom",NA,-2.5969501,53.3900441
+"Watchet, United Kingdom",NA,-3.329177,51.181769
+"Wells, United Kingdom",NA,-2.6445979,51.209347
+"Weymouth, United Kingdom",NA,-2.4546253,50.6099306
+"Whitby, United Kingdom",NA,-0.613347,54.486335
+"Whitehaven, United Kingdom",NA,-3.589233,54.549699
+"Whitstable, United Kingdom",NA,1.024256,51.361047
+"Wisbech, United Kingdom",NA,0.158797,52.666317
+"Wivenhoe, United Kingdom",NA,0.9652740000000001,51.857997
+"Workington, United Kingdom",NA,-3.542752,54.643569
+"Castletown, United Kingdom",NA,-2.437715,50.559233
+"Douglas, United Kingdom",NA,-3.847176,55.55733499999999
+"Peel, United Kingdom",NA,-4.6985,54.2225
+"Ramsey, United Kingdom",NA,-0.1084655,52.4503619
+"St Helier, United Kingdom",NA,-0.1905439,51.3957054
+"St Peter Port, United Kingdom",NA,-2.5497069,49.4541677
+"Aberdeen, United Kingdom",NA,-2.094278,57.149717
+"Annan, United Kingdom",NA,-3.259773,54.990246
+"Arbroath, United Kingdom",NA,-2.591543,56.559107
+"Ardrossan, United Kingdom",NA,-4.81182,55.64388899999999
+"Ayr, United Kingdom",NA,-4.629179000000001,55.458564
+"Barcaldine, United Kingdom",NA,-5.3139514,56.52044600000001
+"Braefoot Bay, United Kingdom",NA,-2.4858285,57.504633
+"Bowling, United Kingdom",NA,1.7373,53.7812
+"Buckie, United Kingdom",NA,-2.967311,57.67739199999999
+"Burghead, United Kingdom",NA,-3.489213,57.700232
+"Burntisland, United Kingdom",NA,-3.2339151,56.058809
+"Campbeltown, United Kingdom",NA,-5.605373999999999,55.424117
+"Corpach, Incl Annat Pier, United Kingdom",NA,-5.121943000000001,56.842808
+"Dundee, United Kingdom",NA,-2.970721,56.462018
+"Faslane, United Kingdom",NA,-4.8187095,56.05739519999999
+"Finnart, United Kingdom",NA,-4.8391025,56.0992308
+"Fraserburgh, United Kingdom",NA,-2.007631,57.693352
+"Furnace, United Kingdom",NA,-0.118092,51.509865
+"Garlieston, United Kingdom",NA,-4.3718389,54.789343
+"Girvan, United Kingdom",NA,-4.8542179,55.240164
+"Glasgow, United Kingdom",NA,-4.251806,55.864237
+"Grangemouth, United Kingdom",NA,-3.7227698,56.0097152
+"Greenock, United Kingdom",NA,-4.771983,55.95647599999999
+"Hound Point Terminal, United Kingdom",NA,-3.3591557,56.0059099
+"Hunterston, United Kingdom",NA,-4.8983287,55.7233313
+"Invergordon, United Kingdom",NA,-4.172882,57.688106
+"Inverkeithing, United Kingdom",NA,-3.398795,56.030043
+"Inverness, United Kingdom",NA,-4.224721,57.477773
+"Irvine, United Kingdom",NA,-4.6696364,55.61156690000001
+"Islay, United Kingdom",NA,-6.177067,55.7362535
+"Kirkcaldy, United Kingdom",NA,-3.158137,56.1168249
+"Kirkwall, United Kingdom",NA,-2.9622491,58.98467400000001
+"Leith, United Kingdom",NA,-3.1665102,55.97552779999999
+"Lerwick, United Kingdom",NA,-1.1492931,60.1529871
+"Lochaline, United Kingdom",NA,-5.777343,56.53486299999999
+"Lossiemouth, United Kingdom",NA,-3.280325,57.72157899999999
+"Macduff, United Kingdom",NA,-2.497849,57.67058999999999
+"Methil, United Kingdom",NA,-3.0164019,56.184843
+"Montrose, United Kingdom",NA,-2.466115,56.706922
+"Oban, United Kingdom",NA,-5.471047,56.415157
+"Palnackie, United Kingdom",NA,-3.840674999999999,54.89191
+"Perth, United Kingdom",NA,-3.4308381,56.394994
+"Peterhead, United Kingdom",NA,-1.784066,57.50812299999999
+"Rosyth, United Kingdom",NA,-3.423064,56.03646999999999
+"Scalloway, United Kingdom",NA,-1.282203,60.137715
+"Scrabster, United Kingdom",NA,-3.552627,58.61102599999999
+"Stornoway, United Kingdom",NA,-6.3848692,58.209435
+"Stranraer, United Kingdom",NA,-5.024055,54.903367
+"Stromness, United Kingdom",NA,-3.296495,58.96619399999999
+"Tayport, United Kingdom",NA,-2.8809121,56.447996
+"Ullapool, United Kingdom",NA,-5.161313,57.895418
+"Wick, United Kingdom",NA,-3.093716,58.438936
+"Belfast, United Kingdom",NA,-5.93012,54.59728500000001
+"Coleraine, United Kingdom",NA,-6.664610300000001,55.1325802
+"Larne, United Kingdom",NA,-5.8236224,54.8578003
+"Londonderry, United Kingdom",NA,-7.3085748,54.9966124
+"Portrush, United Kingdom",NA,-6.6526708,55.2041945
+"Warrenpoint, United Kingdom",NA,-6.252077799999999,54.105301
+"Aberdeen Airport, United Kingdom",NA,-2.2002149,57.203715
+"Belfast International Airport, United Kingdom",NA,-6.2171452,54.656309
+"Biggin Hill Airport, United Kingdom",NA,0.0284059,51.3305701
+"Birmingham Airport, United Kingdom",NA,-1.7435071,52.45238209999999
+"Blackpool International Airport, United Kingdom",NA,-3.0435221,53.7782974
+"Bournemouth Airport, United Kingdom",NA,-1.8323059,50.7775437
+"Bristol Airport, United Kingdom",NA,-2.7135463,51.38363039999999
+"Cambridge Airport, United Kingdom",NA,0.1712947,52.20693199999999
+"Cardiff Airport, United Kingdom",NA,-3.3460994,51.3977701
+"Coventry Airport, United Kingdom",NA,-1.4812741,52.37226709999999
+"Durham Tees Valley (Teesside) Airport, United Kingdom",NA,-1.4277807,54.5093243
+"East Midlands Airport, United Kingdom",NA,-1.332134,52.82937399999999
+"Edinburgh Airport, United Kingdom",NA,-3.3614532,55.950785
+"Exeter Airport, United Kingdom",NA,-3.4163957,50.7307465
+"Farnborough Airport, United Kingdom",NA,-0.777307,51.283039
+"Filton Aerodrome (Bristol), United Kingdom",NA,-2.576467,51.507864
+"Glasgow Airport, United Kingdom",NA,-4.4350529,55.8690744
+"Humberside International Airport, United Kingdom",NA,-0.3502052,53.57554289999999
+"Leeds Bradford Airport, United Kingdom",NA,-1.6615306,53.86794339999999
+"Liverpool John Lennon Airport, United Kingdom",NA,-2.8550475,53.3358627
+"London Ashford (Lydd) Airport, United Kingdom",NA,0.9335221,50.9557337
+"London City Airport, United Kingdom",NA,0.049518,51.5048437
+"London Gatwick Airport, United Kingdom",NA,-0.1820629,51.1536621
+"London Heathrow Airport, United Kingdom",NA,-0.4542955,51.4700223
+"London Luton Airport, United Kingdom",NA,-0.3717471,51.87626460000001
+"London Stansted Airport, United Kingdom",NA,0.2388661,51.8860181
+"Manchester Airport, United Kingdom",NA,-2.2727303,53.3588026
+"Manston Airport, United Kingdom",NA,1.3586653,51.3469491
+"Newcastle Airport, United Kingdom",NA,-1.7098663,55.0374478
+"Newquay Airport, United Kingdom",NA,-5.0088135,50.4399636
+"Norwich Airport, United Kingdom",NA,1.2837392,52.6756294
+"Plymouth Airport, United Kingdom",NA,-3.4163957,50.7307465
+"Prestwick Airport, United Kingdom",NA,-4.592294,55.5098091
+"Ronaldsway Airport (Isle of Man), United Kingdom",NA,-4.633939799999999,54.0865957
+"Shoreham Airport, United Kingdom",NA,-0.2906287,50.8334678
+"Southampton (Eastleigh) Airport, United Kingdom",NA,-1.3577199,50.95147069999999
+"Southend Airport, United Kingdom",NA,0.6924653,51.57018979999999
+"Sumburgh Airport (Shetland), United Kingdom",NA,-1.2890447,59.8777809
+"George Best Belfast City Airport, United Kingdom",NA,-5.871830399999999,54.6176164
+"Gloucester (Staverton) Airport, United Kingdom",NA,-2.1577797,51.8929214
+"Kemble Airport, United Kingdom",NA,-2.0574322,51.6698421
+"Lasham Airport, United Kingdom",NA,-1.033482,51.18604389999999
+"Oxford Airport (Kidlington), United Kingdom",NA,-1.3157603,51.8327858
+"Robin Hood Doncaster Sheffield, United Kingdom",NA,-1.0054727,53.47782249999999
+"Stornoway Airport, United Kingdom",NA,-6.3219232,58.21387099999999
+"Warton Aerodrome, United Kingdom",NA,-2.892395,53.7499492
+"Wick Airport, United Kingdom",NA,-3.087864,58.45328839999999
+"Yeovil Aerodrome, United Kingdom",NA,-2.6579611,50.9399186
+"Brize Norton, United Kingdom",NA,-1.566767,51.767658
+"Fairford, United Kingdom",NA,-1.785135,51.70753699999999
+"Feltwell, United Kingdom",NA,0.519412,52.48637799999999
+"Lakenheath, United Kingdom",NA,0.5218539999999999,52.413917
+"Lyneham, United Kingdom",NA,-1.97945,51.51402299999999
+"Menwith Hill, United Kingdom",NA,-1.6901547,54.0114606
+"Mildenhall, United Kingdom",NA,0.5156094999999999,52.347568
+"All Other Airports, United Kingdom",NA,-0.118092,51.509865
+"Ashford, United Kingdom",NA,0.875019,51.1464659
+"Barking, United Kingdom",NA,0.075766,51.536563
+"Dagenham, United Kingdom",NA,0.14743,51.53888999999999
+"Daventry, United Kingdom",NA,-1.164947,52.257473
+"Dollands Moor, United Kingdom",NA,1.1056052,51.092479
+"Widnes, United Kingdom",NA,-2.733637,53.361024

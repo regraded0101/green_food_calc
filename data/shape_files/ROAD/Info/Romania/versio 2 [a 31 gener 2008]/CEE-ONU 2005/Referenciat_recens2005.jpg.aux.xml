@@ -1,0 +1,46 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="EXIF_Orientation">1</MDI>
+    <MDI key="EXIF_XResolution">(200)</MDI>
+    <MDI key="EXIF_YResolution">(200)</MDI>
+    <MDI key="EXIF_ResolutionUnit">2</MDI>
+    <MDI key="EXIF_Software">Adobe Photoshop CS2 Windows</MDI>
+    <MDI key="EXIF_DateTime">2006:12:12 14:13:43</MDI>
+    <MDI key="EXIF_ColorSpace">65535</MDI>
+    <MDI key="EXIF_PixelXDimension">4745</MDI>
+    <MDI key="EXIF_PixelYDimension">4206</MDI>
+  </Metadata>
+  <Metadata domain="xml:ESRI" format="xml">
+    <GeodataXform xsi:type="typens:IdentityXform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:typens="http://www.esri.com/schemas/ArcGIS/9.2">
+      <SpatialReference xsi:type="typens:ProjectedCoordinateSystem">
+        <WKT>PROJCS[&quot;Clarke_1866_Polyconic&quot;,GEOGCS[&quot;GCS_Clarke_1866&quot;,DATUM[&quot;D_Clarke_1866&quot;,SPHEROID[&quot;Clarke_1866&quot;,6378206.4,294.9786982]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]],PROJECTION[&quot;Polyconic&quot;],PARAMETER[&quot;False_Easting&quot;,0.0],PARAMETER[&quot;False_Northing&quot;,-2222408.5],PARAMETER[&quot;Central_Meridian&quot;,10.0],PARAMETER[&quot;Latitude_Of_Origin&quot;,33.0],UNIT[&quot;Meter&quot;,1.0]]</WKT>
+        <XOrigin>-20037900</XOrigin>
+        <YOrigin>-21223400</YOrigin>
+        <XYScale>224754072.401324</XYScale>
+        <ZOrigin>-100000</ZOrigin>
+        <ZScale>10000</ZScale>
+        <MOrigin>-100000</MOrigin>
+        <MScale>10000</MScale>
+        <XYTolerance>8.89861517805457E-09</XYTolerance>
+        <ZTolerance>0.0002</ZTolerance>
+        <MTolerance>0.0002</MTolerance>
+        <HighPrecision>true</HighPrecision>
+      </SpatialReference>
+    </GeodataXform>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

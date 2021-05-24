@@ -1,0 +1,38 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 31
+    NumeroLigne Integer ;
+    Statut Char (10) ;
+    _Iti_Euro_1 Char (4) ;
+    Departement Integer ;
+    Route Char (6) ;
+    A_N Char (1) Index 1 ;
+    Concession Char (1) ;
+    PR_debut Integer ;
+    Abscisse_debut Integer ;
+    PR_fin Integer ;
+    Abscisse_fin Integer ;
+    Abscisse_cumulee_fin Integer ;
+    TMJA_2005 Integer ;
+    Longueur_km Float ;
+    Clast Integer ;
+    Clproftraf Integer ;
+    _tage__PL_2005 Float ;
+    Trafic_2000 Integer ;
+    _PL Float ;
+    croissance_2000 Char (21) ;
+    pour_numero Integer ;
+    ordre_section Char (128) ;
+    N__de_section Char (8) ;
+    COL_23 Char (128) ;
+    COL_24 Char (128) ;
+    COL_25 Char (128) ;
+    absde_1000 Char (128) ;
+    Absc_deb Char (128) ;
+    absfin_1000 Char (128) ;
+    Absc_fin Char (128) ;
+    L_CHAUSSEE Char (1) ;
