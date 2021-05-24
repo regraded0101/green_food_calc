@@ -15,7 +15,7 @@ library(gdistance)
 library(readr)
 # create port location master ----
 # DO NOT RUN - Linked to Google's API and can charge to run a lot
-#register_google("AIzaSyBm1THuOq7VrkkYw8UEfwPuOLNXHYEcpUM")
+#register_google()
 # 
 # location_data <- 
 #    trade_data %>%
