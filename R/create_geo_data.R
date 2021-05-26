@@ -257,29 +257,44 @@ road_path_ls <- vector("list", nrow(eu_ports))
 road_distances <- data.frame(distance = numeric(), country = character(), stringsAsFactors=FALSE)
 for (k in 1:nrow(eu_ports)) {
   
+  country_name <- eu_ports[[k,1]]
+  
+  # direct routes from Ireland to Belfast
+  if (country_name == "Irish Republic") {
+    
+    route <- 
+      ggmap::route(from = as.character(country_name), 
+                   to = "Belfast, United Kingdom", 
+                   mode = "driving", 
+                   structure = "route")
+    
+    
+  } else {
   # create path from EU country to Calais, France
-  route <- 
-    ggmap::route(from = as.character(eu_ports[[k,1]]), 
-                 to = "Calais, France", 
-                 mode = "driving", 
-                 structure = "route")
+    route <- 
+      ggmap::route(from = as.character(country_name), 
+                   to = "Calais, France", 
+                   mode = "driving", 
+                   structure = "route")
+  }
   
   # add name of port
-  route <- mutate(route, country = eu_ports[[k,1]])
+  route <- mutate(route, country = country_name)
   
   # calculate the distance of the route
   road_dist <- sum(route$km, na.rm = TRUE)
   # add to dataframe
   road_distances[[k, 'distance']] <- road_dist
-  road_distances[[k, 'country']] <- eu_ports[[k,1]]
+  road_distances[[k, 'country']] <- country_name
       
   # add to path road list
   road_path_ls[[k]] <- route
 
 }
 
-
+# turn into a dataframe
 road_path_df <- do.call(rbind, road_path_ls)
+
 # alter and add columns to map to sea_air_paths
 road_path_df <-
   road_path_df %>% 
@@ -287,6 +302,21 @@ road_path_df <-
   mutate(type = "Road") %>%
   rename(group= country) %>%
   select(lon, lat, group, type) 
+
+# add the crossing from Calais to Dover for each country
+road_path_df <- 
+  road_path_df %>% 
+  group_by(group) %>% 
+  do({ road_path_df <- . 
+  last_row           <- road_path_df %>% slice(n())
+  last_row$lat  <- 51.1279
+  last_row$lon <- 1.3134
+  last_row$type <- "Sea_EC"
+  road_path_df                 <- bind_rows(road_path_df,last_row)
+  }) %>%
+  ungroup()
+
+
 
 # Together ----
 sea_air_road_paths <- sea_air_paths %>%
@@ -297,14 +327,51 @@ sea_air_road_paths <- sea_air_paths %>%
 world_shp_plot <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_clean")
 world_df_plot <- broom::tidy(world_shp_plot)
 
-
 ggplot() +
   geom_polygon(world_df_plot, mapping = aes(x = long, y = lat, group = group), fill = 'lightgrey') +
-  geom_path(sea_air_road_paths %>% filter(group == "Australia"), mapping = aes(x = lon, y = lat, group = group))
+  geom_path(sea_air_road_paths %>% filter(type == 'Road'), mapping = aes(x = lon, y = lat, group = group))
 ggplotly()  
 
 write_rds(sea_air_paths, "data/geo_data/tidy_data/sea_air_paths.rds")
 write_rds(sea_air_road_paths, "data/geo_data/tidy_data/sea_air_road_paths.rds")
 
+# Together Distances----
+## Combine the air, sea and road distances into 1 dataframe
+## Step 1. Normalise the distances -> airports_data in m, port_df in km, road_distances in km
+airports_data <- airports_data %>% mutate(dist = dist/1000)
 
+## Step 2. Normalise the number of columns and their names
+airports_data <- 
+  airports_data %>% 
+  select(intl_port, dist) %>%
+  mutate(type = "Air") %>%
+  rename(country = intl_port,
+         distance = dist)
+
+port_df <- 
+  port_df %>%
+  select(port_intl, distance) %>%
+  mutate(type = "Sea") %>%
+  rename(country = port_intl)
+
+road_distances <- 
+  road_distances %>% 
+  select(country, distance) %>%
+  mutate(type = "Road")
+
+### add in  the distance from Calais to Dover (from distHaversine formula)
+ec_distances <- tibble(country = road_distances$country,
+                       distance = distHaversine(c(1.8587,50.9513), c(1.3134, 51.1279)) /1000,
+                       type = "Sea_EC")
+
+## Step 3. Combine into a single dataframe
+
+sea_air_road_distances <- 
+  bind_rows(airports_data,
+            port_df,
+            road_distances,
+            ec_distances)
+
+## Step 4. Write to .RDS
+write_rds(sea_air_road_distances, "data/geo_data/tidy_data/sea_air_road_distances.rds")
 

@@ -168,6 +168,7 @@ trade_data <-
   mutate(across(matches('^total_.*_value$'), ~ .x / value_total, .names = "{.col}_perc"),  # divides any columns with total_ & _value by the total_value
          across(matches('^total_.*_mass$'), ~ .x / mass_total, .names = "{.col}_perc")) # divides any columns with total_ & _mass by the total_mass
 
+write_rds(trade_data, "data/master_data/master_data_set.rds")
 
 
 
