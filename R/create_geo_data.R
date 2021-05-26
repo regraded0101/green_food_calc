@@ -327,10 +327,9 @@ sea_air_road_paths <- sea_air_paths %>%
 world_shp_plot <- rgdal::readOGR(dsn = "data/shape_files", layer = "world_map_clean")
 world_df_plot <- broom::tidy(world_shp_plot)
 
-
 ggplot() +
   geom_polygon(world_df_plot, mapping = aes(x = long, y = lat, group = group), fill = 'lightgrey') +
-  geom_path(sea_air_road_paths %>% filter(group == 'France'), mapping = aes(x = lon, y = lat, group = group))
+  geom_path(sea_air_road_paths %>% filter(type == 'Road'), mapping = aes(x = lon, y = lat, group = group))
 ggplotly()  
 
 write_rds(sea_air_paths, "data/geo_data/tidy_data/sea_air_paths.rds")
