@@ -1,34 +1,5 @@
 Activity,Type,Size,Unit,kg CO2e,kg CO2,kg CH4,kg N2O
-Freight flights,"Domestic, to/from UK",,tonne.km,  4.76719 ,  4.74134 ,  0.00224 ,  0.02361 
-Freight flights,"Short-haul, to/from UK",,tonne.km,  2.20946 ,  2.19843 ,  0.00008 ,  0.01095 
-Freight flights,"Long-haul, to/from UK",,tonne.km,  1.13382 ,  1.12816 ,  0.00004 ,  0.00562 
 Freight flights,"International, to/from non-UK",,tonne.km,  1.13382 ,  1.12816 ,  0.00004 ,  0.00562 
-Cargo ship,Bulk carrier,"200,000+ dwt",tonne.km,0.00254,0.00250,0.00000,0.00003
-Cargo ship,,"100,000–199,999 dwt",tonne.km,0.00304,0.00300,0.00000,0.00004
-Cargo ship,,"60,000–99,999 dwt",tonne.km,0.00416,0.00410,0.00000,0.00006
-Cargo ship,,"35,000–59,999 dwt",tonne.km,0.00578,0.00570,0.00000,0.00008
-Cargo ship,,"10,000–34,999 dwt",tonne.km,0.00801,0.00790,0.00000,0.00011
-Cargo ship,,0–9999 dwt,tonne.km,0.02961,0.02920,0.00001,0.00040
-Cargo ship,,Average,tonne.km,0.00354,0.00349,0.00000,0.00005
-Cargo ship,General cargo,"10,000+ dwt",tonne.km,0.01207,0.01190,0.00000,0.00016
-Cargo ship,,5000–9999 dwt,tonne.km,0.01602,0.01580,0.00001,0.00022
-Cargo ship,,0–4999 dwt,tonne.km,0.01409,0.01390,0.00000,0.00019
-Cargo ship,,"10,000+ dwt 100+ TEU",tonne.km,0.01115,0.01100,0.00000,0.00015
-Cargo ship,,5000–9999 dwt 100+ TEU,tonne.km,0.01774,0.01750,0.00001,0.00024
-Cargo ship,,0–4999 dwt 100+ TEU,tonne.km,0.02008,0.01980,0.00001,0.00027
-Cargo ship,,Average,tonne.km,0.01323,0.01305,0.00000,0.00018
-Cargo ship,Container ship,8000+ TEU,tonne.km,0.01267,0.01250,0.00000,0.00017
-Cargo ship,,5000–7999 TEU,tonne.km,0.01683,0.01660,0.00001,0.00023
-Cargo ship,,3000–4999 TEU,tonne.km,0.01683,0.01660,0.00001,0.00023
-Cargo ship,,2000–2999 TEU,tonne.km,0.02028,0.02000,0.00001,0.00027
-Cargo ship,,1000–1999 TEU,tonne.km,0.03255,0.03210,0.00001,0.00044
-Cargo ship,,0–999 TEU,tonne.km,0.03681,0.03630,0.00001,0.00050
-Cargo ship,,Average,tonne.km,0.01614,0.01592,0.00001,0.00022
-Cargo ship,Vehicle transport,4000+ CEU,tonne.km,0.03245,0.03200,0.00001,0.00044
-Cargo ship,,0–3999 CEU,tonne.km,0.05840,0.05760,0.00002,0.00079
-Cargo ship,,Average,tonne.km,0.03858,0.03805,0.00001,0.00052
-Cargo ship,RoRo-Ferry,2000+ LM,tonne.km,0.05019,0.04950,0.00002,0.00068
-Cargo ship,,0–1999 LM,tonne.km,0.06114,0.06030,0.00002,0.00082
-Cargo ship,,Average,tonne.km,0.05166,0.05095,0.00002,0.00069
-Cargo ship,Large RoPax ferry,Average,tonne.km,0.37668,0.37150,0.00011,0.00506
-Cargo ship,Refrigerated cargo, All dwt,tonne.km,0.01308,0.01290,0.00000,0.00018
+Cargo ship,General cargo,Average,tonne.km,0.01323,0.01305,0,0.00018
+Cargo ship,RoRo-Ferry,2000+ LM,tonne.km,0.05019,0.0495,0.00002,0.00068
+HGV (all diesel),All HGVs,,tonne.km, 0.10650 , 0.10487 , 0.00002 , 0.00161 
