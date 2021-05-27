@@ -21,15 +21,18 @@ shinyUI(fluidPage(
         sidebarPanel(
             selectInput("country",
                         "Country",
-                        choices = eu_countries),
+                        choices = trade_data %>% distinct(country) %>% pull()),
             selectInput("commodity", 
                         "Commodity",
                         choices = distinct(trade_data, description))
         ),
-
+        
         # Show a plot of the generated distribution
         mainPanel(
-            DT::DTOutput("table")
+            DT::DTOutput("table"),
+            valueBoxOutput("emm_rank"),
+            DT::DTOutput("better_emmissions"),
+            DT::DTOutput("worse_emmissions")
         )
     )
 ))

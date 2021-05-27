@@ -170,7 +170,155 @@ trade_data <-
 
 write_rds(trade_data, "data/master_data/master_data_set.rds")
 
+# Clean Emmissions Data ----
+
+# clean up emmission factor data 
+emmission_factor <- 
+  emmission_factor %>%
+  janitor::clean_names() %>%
+  mutate(activity_type = paste0(activity, ' ', type)) %>%
+  select(-c(size, activity, type)) %>%
+  mutate(activity_type = recode(activity_type, 
+                                "Freight flights International, to/from non-UK" = "Air",
+                                "Cargo ship General cargo" = "Sea",
+                                "Cargo ship RoRo-Ferry" = "Sea_EC",
+                                "HGV (all diesel) All HGVs" = "Road")) %>%
+  rename(type = activity_type)
+
+write_rds(emmission_factor, "data/master_data/emmissions_factors_master.rds")
+
+# Create Emmissions Master Data ----
+eu_countries <- trade_data %>% filter(eu_non_eu == "EU") %>% distinct(country) %>% pull()
+
+get_emmisions <- function(import_country, commodity) {
+  
+  # if EU country is selected then give transport type as "Road"
+  if (import_country %in% eu_countries) {
+    transport_type <- 
+      trade_data %>%
+      filter(description == commodity,
+             country == import_country) %>%
+      mutate(port_type = replace_na(port_type,"Road/Sea_EC"), 
+             value_share = value/value_total,
+             mass_share = mass/mass_total) %>%
+      select(port_type, value_share, mass_share) %>%
+      rename(type = port_type) %>%
+      separate_rows(type, sep = "/")
+    
+    # get transport distance from country and transport type
+    transport_distance <-
+      sea_air_road_distances %>%
+      filter(country == import_country,
+             type %in% pull(transport_type, type)) %>%
+      select(distance, type)
+    
+    # get transport emmission factor
+    transport_emmission <-
+      emmission_factor %>%
+      filter(type %in% pull(transport_type, type)) %>%
+      select(kg_co2e, type)
+    
+    # combine emmissions for Road and English Channel and remove the duplicated row
+    emmissions_type <-
+      tibble(transport_type) %>%
+      left_join(transport_distance, by = "type") %>%
+      left_join(transport_emmission, by = "type") %>%
+      mutate(emmissions_per_tonne = distance*kg_co2e) %>%
+      select(-c(distance, kg_co2e)) %>%
+      mutate(emmissions_per_tonne = sum(emmissions_per_tonne),
+             country = import_country,
+             product = commodity) %>%
+      mutate(type = case_when(type == "Road" ~ "Road/Sea_EC",
+                              type == "Sea_EC" ~ "Road/Sea_EC")) %>%
+      distinct()
+    
+    
+    
+  } else {  
+    # get transport type from country and commodity
+    transport_type <- 
+      trade_data %>%
+      filter(description == commodity,
+             country == import_country) %>%
+      mutate(value_share = value/value_total,
+             mass_share = mass/mass_total) %>%
+      select(port_type, value_share, mass_share) %>%
+      rename(type = port_type)
+    
+    
+    # get transport distance from country and transport type
+    transport_distance <-
+      sea_air_road_distances %>%
+      filter(country == import_country,
+             type %in% pull(transport_type, type)) %>%
+      select(distance, type)
+    
+    # get transport emmission factor
+    transport_emmission <-
+      emmission_factor %>%
+      filter(type %in% pull(transport_type, type)) %>%
+      select(kg_co2e, type)
+    
+    
+    emmissions_type <- 
+      tibble(transport_type) %>%
+      left_join(transport_distance, by = "type") %>%
+      left_join(transport_emmission, by = "type") %>%
+      mutate(emmissions_per_tonne = distance*kg_co2e,
+             country = import_country,
+             product = commodity) %>%
+      select(-c(distance, kg_co2e))
+    
+  }
+  
+  return(emmissions_type)
+
+}
 
 
+
+
+countries <- 
+  trade_data %>%
+  distinct(country) %>%
+  pull(country)
+
+commodities <-
+  trade_data %>%
+  distinct(description) %>%
+  pull(description)
+
+get_emmisions(commodity = 'Fresh or chilled peas "Pisum sativum", shelled or unshelled')
+
+trade_data %>%
+  filter(description == 'Seed potatoes') %>%
+  distinct(country)
+
+
+commodity_country_emmissions <- data.frame()
+i <- 0
+#Run time ~ 20 mins
+for (unit_commodity in commodities) {
+  com_countries <- 
+    trade_data %>%
+    filter(description == unit_commodity) %>%
+    distinct(country) %>%
+    pull(country)
+  
+  i <- i + 1
+  print(paste0(i, " of ", length(commodities)))
+
+  for (country in com_countries) {
+
+    df <- get_emmisions(import_country = country,
+                        commodity = unit_commodity)
+    
+    commodity_country_emmissions <- rbind(commodity_country_emmissions, df)
+
+  }
+}
+
+# Known Issue with Cyprus -> no road map probably because its an Island so Google will struggle
+write_rds(commodity_country_emmissions, "data/master_data/emmissions_data_master.rds")
 
 

@@ -21,15 +21,30 @@ shinyServer(function(input, output) {
         
     })
 
-    output$distPlot <- renderPlot({
-
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
-
+    output$emm_rank <- renderValueBox({
+        
+        valueBox("Percentile: ",
+                 get_emmis_rank(commodity = input$commodity,
+                                import_country = input$country))
+        
+        
     })
-
+    
+    output$better_emmissions <- renderDataTable({
+        
+        datatable(get_better_emmis(commodity = input$commodity,
+                                   import_country = input$country),
+                  caption = "Less Polluting Travel")
+        
+    })
+    
+    output$worse_emmissions <- renderDataTable({
+        
+        
+        datatable(get_worse_emmis(commodity = input$commodity,
+                                  import_country = input$country),
+                  caption = "More Polluting Travel")
+        
+    })
+    
 })
