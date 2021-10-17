@@ -1,5 +1,0 @@
-
-
-1- Rebem un arxiu amb extensió .dat que no podem obrir.
-
-2- Canviem l'extensió a .dwg i l'obrim amb AutoCAD.

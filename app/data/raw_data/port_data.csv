@@ -1,0 +1,280 @@
+Port,Freight location code,Port Type
+Althorpe,TRT (Trent),Sea
+Amble,BLY (Blyth),Sea
+Appledore,WAT (Watchet),Sea
+Avonmouth,AVO,Sea
+"Baltic Wharf, Rochford",LON (London),Sea
+Barrow-In-Furness,BAR,Sea
+Barrow-On-Humber,IMM (Immingham),Sea
+Barry Dock,CDF (Cardiff),Sea
+Barton-On-Humber,IMM (Immingham),Sea
+Beckingham,TRT (Trent),Sea
+Berwick,BLY (Blyth),Sea
+Bideford,WAT (Watchet),Sea
+Birkenhead,LIV (Liverpool),Sea
+Blyth,BLY,Sea
+Boston,BOS,Sea
+Bridgwater,WAT (Watchet),Sea
+Bridlington,HUL (Hull),Sea
+Bridport,WEY (Weymouth),Sea
+Brightlingsea,COL (Colchester),Sea
+Briton Ferry,PTB (Port Talbot),Sea
+Brixham,TNM (Teignmouth),Sea
+Burnham-on-Crouch,COL (Colchester),Sea
+Burton Stather,TRT (Trent),Sea
+Caernarfon,LLA (Llanddulas),Sea
+Cardiff,CDF,Sea
+Charlestown,FOY (Fowey),Sea
+Chepstow,NPT (Newport),Sea
+Colchester,COL,Sea
+Cowes,COW,Sea
+Dartmouth,TNM (Teignmouth),Sea
+Dover,DOV,Sea
+Ellesmere Port,ELL,Sea
+Exeter,EXE,Sea
+Exmouth,EXE (Exeter),Sea
+Falmouth,FAL,Sea
+Faversham,WTS (Whitstable),Sea
+Felixstowe,FXT,Sea
+Fingringhoe,COL (Colchester),Sea
+Fishguard,FIS,Sea
+Fleetwood,FLE,Sea
+Flixborough Wharf,TRT (Trent),Sea
+Fowey,FOY,Sea
+Gainsborough,TRT (Trent),Sea
+Garston,LIV (Liverpool),Sea
+Glasson Dock,HEY (Heysham),Sea
+Gloucester,SSS (Sharpness),Sea
+Goole,GOO,Sea
+Great Yarmouth,GTY,Sea
+Grimsby,GRI,Sea
+Grove Wharves,TRT (Trent),Sea
+Guness Wharf,TRT (Trent),Sea
+Hartlepool,HTP,Sea
+Harwich,HRH,Sea
+Heysham,HEY,Sea
+Holehaven,LON (London),Sea
+Holyhead,HLD,Sea
+Howdendyke,GOO (Goole),Sea
+Hull,HUL,Sea
+Immingham,IMM,Sea
+Ipswich,IPS,Sea
+Keadby,TRT (Trent),Sea
+Kings Lynn,KLN,Sea
+Lancaster,HEY (Heysham),Sea
+Leigh-On-Sea,LON (London),Sea
+Littlehampton,SHO (Shoreham),Sea
+Liverpool,LIV,Sea
+Llanddulas,LLA,Sea
+Llanelli,SWA (Swansea),Sea
+London,LON,Sea
+London Gateway,LGP,Sea
+Lowestoft,LOW,Sea
+Lymington,STN (Southampton),Sea
+Maldon,COL (Colchester),Sea
+Manchester,MNC,Sea
+Medway,MED,Sea
+Middlesbrough,MID,Sea
+Milford,MIL,Sea
+Millom,BAR (Barrow-in Furness),Sea
+Mistley,HRH (Harwich),Sea
+Mostyn,MOS,Sea
+Neap House,TRT (Trent),Sea
+Neath Abbey,PTB (Port Talbot),Sea
+Newcastle,TYN (Tyne),Sea
+Newhaven,NHV,Sea
+New Holland,IMM (Immingham),Sea
+Newlyn,PEN (Penzance),Sea
+"Newport, Gwent",NPT,Sea
+North Shields,TYN (Tyne),Sea
+Northwich,NTH,Sea
+Norwich,NOR,Sea
+Padstow,PLY (Plymouth),Sea
+Par,PAR,Sea
+Parkeston Quay,HRH (Harwich),Sea
+Partington,MNC (Manchester),Sea
+Pembroke Ferry,MIL (Milford),Sea
+Pembroke (Oils) So,MIL (Milford),Sea
+Pembroke Epu,MIL (Milford),Sea
+Penryn,FAL (Falmouth),Sea
+Penzance,PEN,Sea
+Plymouth,PLY,Sea
+Point Bid,TRT (Trent),Sea
+Poole,POO,Sea
+Port Penrhyn,LLA (Llanddulas),Sea
+Portishead,AVO (Avonmouth),Sea
+Portland,PTL,Sea
+Portsmouth,PTM,Sea
+Port Talbot,PTB,Sea
+Queenborough,MED (Medway),Sea
+Ramsgate,RMG,Sea
+Rhyl,MOS (Mostyn),Sea
+Ridham Dock,MED (Medway),Sea
+Rochester,MED (Medway),Sea
+Rochford,LON (London),Sea
+Rowhedge,COL (Colchester),Sea
+Royal Portbury Dock,AVO (Avonmouth),Sea
+Runcorn,RUN,Sea
+Rye,FOL (Folkestone),Sea
+Scarborough,SCA,Sea
+Scunthorpe,TRT (Trent),Sea
+Seaham,SUN (Sunderland),Sea
+Selby,GOO (Goole),Sea
+Sharpness,SSS,Sea
+Sheerness,MED (Medway),Sea
+Shoreham,SHO,Sea
+Shotton,MOS (Mostyn),Sea
+Silloth,SIL,Sea
+Southampton,STN,Sea
+Southend (Corporation Jetty),LON (London),Sea
+South Shields,TYN (Tyne),Sea
+Sunderland,SUN,Sea
+Swansea,SWA,Sea
+Teesport,MID (Middlesbrough),Sea
+Teignmouth,TNM,Sea
+Tilbury,LON (London),Sea
+Thames Europort,TEP,Sea
+Thamesport,THP,Sea
+Topsham,EXE (Exeter),Sea
+Torquay,TNM (Teignmouth),Sea
+Trent,TRT,Sea
+Truro,FAL (Falmouth),Sea
+Tyne,TYN,Sea
+Warrington,RUN (Runcorn),Sea
+Watchet,WAT,Sea
+Wells,NOR,Sea
+Weymouth,WEY,Sea
+Whitby,WTB,Sea
+Whitehaven,WHV,Sea
+Whitstable,WTS (Whitstable),Sea
+Wisbech,WIS,Sea
+Wivenhoe,COL (Colchester),Sea
+Workington,WOR,Sea
+Castletown,DGS (Douglas),Sea
+Douglas,DGS,Sea
+Peel,DGS (Douglas),Sea
+Ramsey,DGS (Douglas),Sea
+St Helier,JSY (Jersey),Sea
+St Peter Port,GSY (Guernsey),Sea
+Aberdeen,ABD,Sea
+Annan,GRK (Greenock),Sea
+Arbroath,DUN (Dundee),Sea
+Ardrossan,ARD,Sea
+Ayr,AYR,Sea
+Barcaldine,GRK (Greenock),Sea
+Braefoot Bay,GRG (Grangemouth),Sea
+Bowling,GLW (Glasgow),Sea
+Buckie,FRB (Fraserburgh),Sea
+Burghead,INV (Inverness),Sea
+Burntisland,GRG (Grangemouth),Sea
+Campbeltown,GRK (Greenock),Sea
+"Corpach, Incl Annat Pier",INV (Inverness),Sea
+Dundee,DUN,Sea
+Faslane,GRK (Greenock),Sea
+Finnart,GRK (Greenock),Sea
+Fraserburgh,FRB,Sea
+Furnace,GRK (Greenock),Sea
+Garlieston,GRK (Greenock),Sea
+Girvan,AYR (Ayr),Sea
+Glasgow,GLW,Sea
+Grangemouth,GRG,Sea
+Greenock,GRK,Sea
+Hound Point Terminal,HPT,Sea
+Hunterston,GRK (Greenock),Sea
+Invergordon,INV (Inverness),Sea
+Inverkeithing,GRG (Grangemouth),Sea
+Inverness,INV,Sea
+Irvine,IRV,Sea
+Islay,GRK (Greenock),Sea
+Kirkcaldy,KKD,Sea
+Kirkwall,KWL,Sea
+Leith,LEI,Sea
+Lerwick,LER,Sea
+Lochaline,INV (Inverness),Sea
+Lossiemouth,INV (Inverness),Sea
+Macduff,FRB (Fraserburgh),Sea
+Methil,GRG (Grangemouth),Sea
+Montrose,MON,Sea
+Oban,GRK (Greenock),Sea
+Palnackie,GRK (Greenock),Sea
+Perth,DUN (Dundee),Sea
+Peterhead,PHD,Sea
+Rosyth,ROS,Sea
+Scalloway,LER (Lerwick),Sea
+Scrabster,INV (Inverness),Sea
+Stornoway,STO,Sea
+Stranraer,GRK (Greenock),Sea
+Stromness,KWL (Kirkwall),Sea
+Tayport,DUN (Dundee),Sea
+Ullapool,INV (Inverness),Sea
+Wick,INV (Inverness),Sea
+Belfast,BEL,Sea
+Coleraine,CLR,Sea
+Larne,BEL (Belfast),Sea
+Londonderry,LDY,Sea
+Portrush,CLR (Coleraine),Sea
+Warrenpoint,WPT,Sea
+Aberdeen Airport,ABZ,Air
+Belfast International Airport,BFS,Air
+Biggin Hill Airport,BQH,Air
+Birmingham Airport,BHX,Air
+Blackpool International Airport,BLK,Air
+Bournemouth (Hurn) Airport,BOH,Air
+Bristol Airport,BRS,Air
+Cambridge Airport,CBG,Air
+Cardiff (Wales) Airport,CWL,Air
+Coventry Airport,CVT,Air
+Durham Tees Valley (Teesside) Airport,MME,Air
+East Midlands Airport,EMA,Air
+Edinburgh Airport,EDI,Air
+Exeter Airport,EXT,Air
+Farnborough Airport,FAB,Air
+Filton Aerodrome (Bristol),FZO,Air
+Glasgow Airport,GLA,Air
+Humberside International Airport,HUY,Air
+Leeds Bradford Airport,LBA,Air
+Liverpool John Lennon Airport,LPL,Air
+London Ashford (Lydd) Airport,LYD,Air
+London City Airport,LCY,Air
+London Gatwick Airport,LGW,Air
+London Heathrow Airport,LHR,Air
+London Luton Airport,LTN,Air
+London Stansted Airport,LSA,Air
+Manchester Airport,MAN,Air
+Manston Airport,MSE,Air
+Newcastle Airport,NCL,Air
+Newquay Airport,NQY,Air
+Norwich Airport,NWI,Air
+Plymouth Airport,PLH,Air
+Prestwick Airport,PIK,Air
+Ronaldsway Airport (Isle of Man),RWY,Air
+Shoreham Airport,ESH,Air
+Southampton (Eastleigh) Airport,SOU,Air
+Southend Airport,SEN,Air
+Sumburgh Airport (Shetland),LSI,Air
+George Best Belfast City Airport,BHD,Air
+Gloucester (Staverton) Airport,GLO,Air
+Kemble Airport,KEM,Air
+Lasham Airport,LAS,Air
+Oxford Airport (Kidlington),OAK,Air
+Robin Hood Doncaster Sheffield,DSA,Air
+Stornoway Airport,STY,Air
+Warton Aerodrome,WAR,Air
+Wick Airport,WIK,Air
+Yeovil Aerodrome,YVL,Air
+Brize Norton,BZN,Air
+Fairford,FFD,Air
+Feltwell,FLT,Air
+Lakenheath,LKH,Air
+Lyneham,LYH,Air
+Menwith Hill,MWH,Air
+Mildenhall,MDH,Air
+All Other Airports,null,Air
+Ashford,ASD,Rail
+Barking,LBK,Rail
+Dagenham,DAG,Rail
+Daventry,DVY,Rail
+Dollands Moor,NGO,Rail
+Irvine,KMK,Rail
+Scunthorpe,SCP,Rail
+Widnes,WDN,Rail

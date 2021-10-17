@@ -1,0 +1,13 @@
+name: carbon_calc
+title: carbon_calc
+username:
+account: regraded01
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4503361
+bundleId: 4933670
+url: https://regraded01.shinyapps.io/carbon_calc/
+when: 1629225215.58988
+lastSyncTime: 1629225215.58988
+asMultiple: FALSE
+asStatic: FALSE

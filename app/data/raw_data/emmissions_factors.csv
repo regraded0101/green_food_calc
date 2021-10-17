@@ -1,0 +1,5 @@
+Activity,Type,Size,Unit,kg CO2e,kg CO2,kg CH4,kg N2O
+Freight flights,"International, to/from non-UK",,tonne.km,  1.13382 ,  1.12816 ,  0.00004 ,  0.00562 
+Cargo ship,General cargo,Average,tonne.km,0.01323,0.01305,0,0.00018
+Cargo ship,RoRo-Ferry,2000+ LM,tonne.km,0.05019,0.0495,0.00002,0.00068
+HGV (all diesel),All HGVs,,tonne.km, 0.10650 , 0.10487 , 0.00002 , 0.00161 
