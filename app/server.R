@@ -60,13 +60,14 @@ shinyServer(function(input, output, session) {
             ggplot(data = all_commodity_countries, aes(x = co2_emmissions, 
                                                        y = fct_inorder(country), 
                                                        fill = factor(selected),
-                                                       text = paste0(country, ': ', round(co2_emmissions,0), ' CO2e'))) +
-                       scale_fill_manual(values= c("lightgrey", "#005b96")) +
-                       geom_col() +
-                       theme(panel.background = element_blank(),
-                             axis.title = element_blank(),
-                             legend.position = "none") +
-                       coord_cartesian(xlim = c(0,input$plot_emmission_y_axis))
+                                                       text = paste0(country, ': ', comma(round(co2_emmissions,0)), ' CO2e'))) +
+            scale_fill_manual(values= c("lightgrey", "#005b96")) +
+            geom_col() +
+            xlab("Emissions (CO2e) per Commodity Mass (Kg)") +
+            theme(panel.background = element_blank(),
+                  axis.title.y = element_blank(),
+                  legend.position = "none") +
+            coord_cartesian(xlim = c(0,input$plot_emmission_y_axis))
         
         output_plot <- ggplotly(plot, tooltip = 'text')
                     
@@ -77,7 +78,6 @@ shinyServer(function(input, output, session) {
         return(output_plot)
         
     },
-    #height = function() 20* nrow(get_all_commodity_countries()))
     )
     output$likely_mode_transport <- renderValueBox({
         

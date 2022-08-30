@@ -3,15 +3,12 @@ source("main.R")
 # Define UI for application that draws a histogram
 shinyUI(
   fluidPage(
-    
     # hide error messages
     tags$style(type="text/css",
                ".shiny-output-error { visibility: hidden; }",
                ".shiny-output-error:before { visibility: hidden; }"
     ),
-    
     br(),
-    
     actionButton("show", "How to Use"),
     shinyBS::bsPopover("show", title = "How to Use", content = "This app is designed to provide comarisons between countries for which we import fruit/vegetables from. For a given fruit/vegetable product, the carbon footprints can be compared to make greener choices. Data are sourced from HMRC trade data and supplimented by DfT port data.
             The numbers are only estimates and rely on some key assumptions. Namely that everything is driven from the EU to UK, and everything not in the EU is shipped/flown - depending on what time of port they arrive into.
@@ -23,7 +20,6 @@ shinyUI(
     
     br(),
     br(),
-    
     fluidRow(
         
         column(4,
@@ -31,12 +27,13 @@ shinyUI(
                selectInput("commodity",
                            "Select Fruit/Vegetable",
                            choices = c(unique(trade_data$description), ""),
-                           selected = unique(trade_data$description)[1],
+                           selected = "Bananas, fresh",
                            width = "100%")
                ),
         column(4,
                selectInput("country",
                            "Country:",
+                           selected = "Argentina",
                            choices = unique(trade_data$country)
                            )
                ),
@@ -53,27 +50,20 @@ shinyUI(
 
                align = "center"
             ),
-        
-        
-
-
-
-        fluidRow(
-            column(12,
-                   
-                   plotlyOutput("route_plot")
-                   
-                   )
-                ),
-        
-        fluidRow(
-            column(12,
-                   numericInput("plot_emmission_y_axis", "Change Emissions Upper Limit (CO2e)",
-                                min = 0, max = 2.1e7, value = 300, step = 100),
-                   plotlyOutput("plot_emmissions", height = "auto"))
-        )
-      
-            
+    fluidRow(
+      column(12,
+             numericInput("plot_emmission_y_axis", "Change Emissions Upper Limit (CO2e)",
+                          min = 0, max = 2.1e7, value = 300, step = 100),
+             plotlyOutput("plot_emmissions", height = 'auto')
+      )
+    ),
+    fluidRow(
+        column(12,
+               
+               plotlyOutput("route_plot")
+               
+               )
+            )
   )
     
 )
