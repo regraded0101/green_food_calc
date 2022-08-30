@@ -1,7 +1,8 @@
 source("main.R")
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
+shinyUI(
+  fluidPage(
     
     # hide error messages
     tags$style(type="text/css",
@@ -25,36 +26,36 @@ shinyUI(fluidPage(
     
     fluidRow(
         
-        column(3,
+        column(4,
                
                selectInput("commodity",
                            "Select Fruit/Vegetable",
                            choices = c(unique(trade_data$description), ""),
-                           selected = "Fresh apples",
-                           width = "100%"),
+                           selected = unique(trade_data$description)[1],
+                           width = "100%")
+               ),
+        column(4,
                selectInput("country",
                            "Country:",
                            choices = unique(trade_data$country)
-                           ),
-
-               align = "center"
-            )
-        
-        
-        ),
-    
-    fluidRow(
-    
-        column(3,
+                           )
+               ),
+        column(2,
                
                valueBoxOutput("likely_mode_transport"),
                shinyBS::bsTooltip("likely_mode_transport",
                                   title = "Most likely transportation method taken, using HMRC port data. EU imports not well recorded so assumed to all be Road (+English Channel). Cyprus removed as Google API could not link it to UK"),
-               
+        ),
+        column(2,
                
                valueBoxOutput("ranking")
-        )
-    ),
+               ),
+
+               align = "center"
+            ),
+        
+        
+
     
         tabsetPanel(
             tabPanel("Product Overview",
@@ -71,7 +72,7 @@ shinyUI(fluidPage(
                         column(12,
                                numericInput("plot_emmission_y_axis", "Change Emmissions Upper Limit",
                                             min = 0, max = 2.1e7, value = 300, step = 100),
-                               plotOutput("plot_emmissions", height = "auto"))
+                               plotlyOutput("plot_emmissions", height = "auto"))
                     )
             ),
             
@@ -99,12 +100,10 @@ shinyUI(fluidPage(
                          column(9,
                                 plotOutput("plot_compare_emmissions")
                                 )
-                     )
+                              )
  
-        )
-    
-    )
-    
+                      )
+            )
   )
     
 )

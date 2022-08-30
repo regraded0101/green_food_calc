@@ -1,5 +1,4 @@
 
-
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
     
@@ -42,7 +41,7 @@ shinyServer(function(input, output, session) {
         
     })
     
-    output$plot_emmissions <- renderPlot({
+    output$plot_emmissions <- renderPlotly({
         
         # return NULL if nothing selected
         if(input$commodity=="") return(NULL)
@@ -57,22 +56,29 @@ shinyServer(function(input, output, session) {
             mutate(selected = case_when(country == input$country ~ 1,
                                         TRUE ~ 0))
         
-         plot <- 
-             ggplot(data = all_commodity_countries, aes(x = co2_emmissions, 
-                                                    y = fct_inorder(country), 
-                                                    fill = factor(selected))) +
-             scale_fill_manual(values= c("lightgrey", "#005b96")) +
-             geom_col() +
-             theme(panel.background = element_blank(),
-                   axis.title = element_blank(),
-                   legend.position = "none") +
-             coord_cartesian(xlim = c(0,input$plot_emmission_y_axis))
+        plot <- 
+            ggplot(data = all_commodity_countries, aes(x = co2_emmissions, 
+                                                       y = fct_inorder(country), 
+                                                       fill = factor(selected),
+                                                       text = paste0(country, ': ', round(co2_emmissions,0), 'CO2e'))) +
+                       scale_fill_manual(values= c("lightgrey", "#005b96")) +
+                       geom_col() +
+                       theme(panel.background = element_blank(),
+                             axis.title = element_blank(),
+                             legend.position = "none") +
+                       coord_cartesian(xlim = c(0,input$plot_emmission_y_axis))
+        
+        output_plot <- ggplotly(plot, tooltip = 'text')
+                    
+                   
+    
+                   
          
-        return(plot)
+        return(output_plot)
         
     },
-    height = function() 20* nrow(get_all_commodity_countries()))
-    
+    #height = function() 20* nrow(get_all_commodity_countries()))
+    )
     output$likely_mode_transport <- renderValueBox({
         
         
