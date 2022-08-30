@@ -56,54 +56,24 @@ shinyUI(
         
         
 
-    
-        tabsetPanel(
-            tabPanel("Product Overview",
-                       
-                    fluidRow(
-                        column(12,
-                               
-                               plotlyOutput("route_plot")
-                               
-                               )
-                            ),
-                    
-                    fluidRow(
-                        column(12,
-                               numericInput("plot_emmission_y_axis", "Change Emmissions Upper Limit",
-                                            min = 0, max = 2.1e7, value = 300, step = 100),
-                               plotlyOutput("plot_emmissions", height = "auto"))
-                    )
-            ),
+
+
+        fluidRow(
+            column(12,
+                   
+                   plotlyOutput("route_plot")
+                   
+                   )
+                ),
+        
+        fluidRow(
+            column(12,
+                   numericInput("plot_emmission_y_axis", "Change Emissions Upper Limit (CO2e)",
+                                min = 0, max = 2.1e7, value = 300, step = 100),
+                   plotlyOutput("plot_emmissions", height = "auto"))
+        )
+      
             
-            tabPanel("Compare Products",
-                     
-                     br(),
-                     
-                     br(),
-                     
-                     fluidRow(
-                         column(3,
-                     
-                                 selectInput("commodity_compare",
-                                             "Select Comparison Fruit/Vegetable",
-                                             choices = c(unique(trade_data$description)),
-                                             selected = "Fresh or chilled sweet peppers",
-                                             width = "100%"),
-                                 selectInput("country_compare",
-                                             "Comparison Country:",
-                                             choices = unique(trade_data$country)),
-                                
-                                align = "centre"
-                                ),
-                         
-                         column(9,
-                                plotOutput("plot_compare_emmissions")
-                                )
-                              )
- 
-                      )
-            )
   )
     
 )

@@ -60,7 +60,7 @@ shinyServer(function(input, output, session) {
             ggplot(data = all_commodity_countries, aes(x = co2_emmissions, 
                                                        y = fct_inorder(country), 
                                                        fill = factor(selected),
-                                                       text = paste0(country, ': ', round(co2_emmissions,0), 'CO2e'))) +
+                                                       text = paste0(country, ': ', round(co2_emmissions,0), ' CO2e'))) +
                        scale_fill_manual(values= c("lightgrey", "#005b96")) +
                        geom_col() +
                        theme(panel.background = element_blank(),
@@ -150,66 +150,12 @@ shinyServer(function(input, output, session) {
         
     })
     
-    # create donut plot to compare countries
-    
-    output$plot_compare_emmissions <- renderPlot({
-        
-        # pull emmissions data for selected & comparion products
-        selected_emissions <- 
-            trade_data %>%
-            filter(description == input$commodity,
-                   country == input$country) %>%
-            distinct(country, .keep_all = TRUE) %>%
-            pull(co2_emmissions)
-        
-        comp_emmissions <-
-            trade_data %>%
-            filter(description == input$commodity_compare,
-                   country == input$country_compare) %>%
-            distinct(country, .keep_all = TRUE) %>%
-            pull(co2_emmissions)
-        
-        
-        
-        # create df and manipulate for donut plot
-        comp_emmis_df <- data.frame(country = c(paste0(input$country, " (selected)"), paste0(input$country_compare, " (comparison)")),
-                                    commodity = c(input$commodity, input$commodity_compare),
-                                    emmission = c(selected_emissions, comp_emmissions)
-        )
-        
-        comp_emmis_df <- comp_emmis_df %>% mutate(perc_emm = emmission/sum(emmission),
-                                                  ymax = cumsum(perc_emm),
-                                                  ymin = c(0, head(ymax, n = -1)))
-        
-        
-        plot <-
-            ggplot(comp_emmis_df, aes(ymin = ymin, ymax = ymax, xmin = 3, xmax = 4, fill = country)) +
-            geom_rect() +
-            coord_polar(theta="y") +
-            xlim(c(2, 4)) +
-            theme_void() +
-            labs(fill = "") +
-            ggtitle("Carbon Dioxide Emmissions") +
-            scale_fill_manual(values = c("#DF791301", "#005b96")) 
-        
-        return(plot)
-        
-    })
-    
     
     # automatically update the countries avaliable to select based on commodity code
     observe({
         
         updateSelectInput(session, "country",
                           choices = trade_data %>% filter(description == input$commodity, !is.na(co2_emmissions)) %>% distinct(country) %>% pull() %>% sort())
-    })
-    
-    observe({
-        
-        updateSelectInput(session, "country_compare",
-                          choices = trade_data %>% filter(description == input$commodity_compare, !is.na(co2_emmissions)) %>% distinct(country) %>% pull() %>% sort())
-        
-        
     })
     
     # Create instructions popup
